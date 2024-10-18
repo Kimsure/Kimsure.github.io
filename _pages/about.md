@@ -43,14 +43,7 @@ neural machine translation and computer vision. I have published more than 100 p
 [Kernel Dimension Matters: To Activate Available Kernels for Real-time Video Super-Resolution](https://dl.acm.org/doi/pdf/10.1145/3581783.3611908)
 
 **Shuo Jin**, Meiqin Liu, Chao Yao, Chunyu Lin, Yao Zhao
- <!--
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-</div>
-</div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
--->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2023</div><img src='images/CLG-INet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -58,14 +51,7 @@ neural machine translation and computer vision. I have published more than 100 p
 [CLG-INet: Coupled Local-Global Interactive Network for Image Restoration](https://dl.acm.org/doi/pdf/10.1145/3581783.3612251)
 
 Yuqi Jiang, Chune ZHANG, **Shuo Jin**, Jiao Liu, Jiapeng Wang
- <!--
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-</div>
-</div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
--->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-CSVT</div><img src='images/TCNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -73,14 +59,7 @@ Yuqi Jiang, Chune ZHANG, **Shuo Jin**, Jiao Liu, Jiapeng Wang
 [Temporal consistency learning of inter-frames for video super-resolution](https://ieeexplore.ieee.org/abstract/document/9919163)
 
 Meiqin Liu, **Shuo Jin**, Chao Yao, Chunyu Lin, Yao Zhao
- <!--
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-</div>
-</div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
--->
 
 <!--
 # 🎖 Honors and Awards
@@ -91,14 +70,10 @@ Meiqin Liu, **Shuo Jin**, Chao Yao, Chunyu Lin, Yao Zhao
 
 - *2024.09 - 2028.12 (expected)*, Ph.D in Computer Science, University of Liverpool.
 - *2021.09 - 2023.06*, M.Eng in Electronic Engineering, Beijing Jiaotong University.
-<!-- 
-- *2017.09 - 2021.06*, B.S in Information Engineering, Qingdao University of Science and Technology.
--->
+
 
 <!--
 # 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 -->
 
 # 💻 Works & Internships
