@@ -43,7 +43,9 @@ neural machine translation and computer vision. I have published more than 100 p
 [Kernel Dimension Matters: To Activate Available Kernels for Real-time Video Super-Resolution](https://dl.acm.org/doi/pdf/10.1145/3581783.3611908)
 
 **Shuo Jin**, Meiqin Liu, Chao Yao, Chunyu Lin, Yao Zhao
-
+<!-- [**Project**](https://github.com/jxtse/GEC_Metrics_LLM) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> | <a href="">Link to paper</a> -->
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2023</div><img src='images/CLG-INet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -51,7 +53,9 @@ neural machine translation and computer vision. I have published more than 100 p
 [CLG-INet: Coupled Local-Global Interactive Network for Image Restoration](https://dl.acm.org/doi/pdf/10.1145/3581783.3612251)
 
 Yuqi Jiang, Chune ZHANG, **Shuo Jin**, Jiao Liu, Jiapeng Wang
-
+<!-- [**Project**](https://github.com/jxtse/GEC_Metrics_LLM) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> | <a href="">Link to paper</a> -->
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-CSVT</div><img src='images/TCNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -59,7 +63,9 @@ Yuqi Jiang, Chune ZHANG, **Shuo Jin**, Jiao Liu, Jiapeng Wang
 [Temporal consistency learning of inter-frames for video super-resolution](https://ieeexplore.ieee.org/abstract/document/9919163)
 
 Meiqin Liu, **Shuo Jin**, Chao Yao, Chunyu Lin, Yao Zhao
-
+<!-- [**Project**](https://github.com/jxtse/GEC_Metrics_LLM) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> | <a href="">Link to paper</a> -->
+</div>
+</div>
 
 <!--
 # 🎖 Honors and Awards
