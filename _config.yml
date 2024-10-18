@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Kimsure ｜ Shuo Jin | 金硕"
+title                    : "Shuo Jin | 金硕"
 description              : "M.Eng. at Institute of Information Science in Beijing Jiaotong University. Ph.D at MMT lab in UoL"
 repository               : "Kimsure/Kimsure.github.io"
 google_scholar_stats_use_cdn : true
@@ -21,10 +21,10 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Kimsure ｜ Shuo Jin | 金硕"
+  name             : "Shuo Jin | 金硕"
   avatar           : "images/android-chrome-512x512.png"
   bio              : "University of Liverpool"
-  location         : ""
+  location         : "China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
