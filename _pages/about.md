@@ -32,8 +32,8 @@ neural machine translation and computer vision. I have published more than 100 p
 -->
 
 # 🔥 News
-- *2023.08*: &nbsp;🎉🎉 Two papers accepted by ACM MM 2023. 
-- *2022.10*: &nbsp;🎉🎉 One paper accepted by T-CSVT.
+- *2023.10*: &nbsp;🎉🎉 Two papers accepted by ACM MM 2023. 
+- *2023.04*: &nbsp;🎉🎉 One paper accepted by T-CSVT.
 
 # 📝 Publications 
 
