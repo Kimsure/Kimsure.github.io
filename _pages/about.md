@@ -18,10 +18,10 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-I’m a 1st-year Ph.D student at at [MMT lab](https://jiminxiao.github.io), University of Liverpool, advised by Prof. Jimin Xiao and Siyue Yu. Prior to that, I worked as a camera engineer for vivo Mobile Communication Ltd, focusing on Auto-Foucs & Image-Stablization.
+I’m a 1st-year Ph.D student at [MMT lab](https://jiminxiao.github.io), University of Liverpool, advised by Prof. Jimin Xiao and Siyue Yu. Prior to that, I worked as a camera engineer for vivo Mobile Communication Ltd, focusing on Auto-Foucs & Image-Stablization.
 
 
-I got my M.Eng. degree at [Institute of Information Science](http://mepro.bjtu.edu.cn) (Group Leader: Yao Zhao, IEEE Fellow), Beijing Jiaotong University, advised by Associate Prof. Meiqin Liu and Chao Yao.
+I got my M.Eng. degree at [MePro](http://mepro.bjtu.edu.cn) (Group Leader: Yao Zhao, IEEE Fellow), Beijing Jiaotong University, advised by Associate Prof. Meiqin Liu and Chao Yao.
 
 
 
@@ -74,7 +74,7 @@ Meiqin Liu, **Shuo Jin**, Chao Yao, Chunyu Lin, Yao Zhao
 -->
 # 📖 Educations
 
-- *2024.09 - 2028.12 (expected)*, Ph.D in Computer Science, University of Liverpool.
+- *2024.09 - present*, Ph.D in Electronic and Electrical Engineering, University of Liverpool.
 - *2021.09 - 2023.06*, M.Eng in Electronic Engineering, Beijing Jiaotong University.
 
 
@@ -83,4 +83,9 @@ Meiqin Liu, **Shuo Jin**, Chao Yao, Chunyu Lin, Yao Zhao
 -->
 
 # 💻 Works & Internships
+
 - *2023.07 - 2024.08 (full-time)*, vivo Mobile Communication Ltd.
+
+# 💻 Social Work
+
+Reviewer for ACMMM and TIP.
