@@ -75,7 +75,7 @@ Meiqin Liu, **Shuo Jin**, Chao Yao, Chunyu Lin, Yao Zhao
 -->
 # 📖 Educations
 
-- *2024.09 - present*, Ph.D in Electronic and Electrical Engineering, University of Liverpool.
+- *2024.09 - present*, Ph.D in Computer Science, University of Liverpool.
 - *2021.09 - 2023.06*, M.Eng in Electronic Engineering, Beijing Jiaotong University.
 
 
