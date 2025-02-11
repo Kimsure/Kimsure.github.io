@@ -18,8 +18,9 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-I’m a 1st-year Ph.D student at [MMT lab](https://jiminxiao.github.io), University of Liverpool, co-advised by Dr. Siyue Yu, Prof. Jimin Xiao and Xiaowei Huang. Before that, I worked as a camera engineer for vivo Mobile Communication Ltd, focusing on Auto-Foucs & Image-Stablization.
+I’m a 1st-year Ph.D student at [MMT lab](https://jiminxiao.github.io), University of Liverpool, co-advised by Dr Siyue Yu, Prof. Jimin Xiao. I'm also fortunate to work closely with Prof. Xiaowei Huang, in [Trustworthy Autonomous Cyber-Physical Systems (ACPS) Lab](https://cgi.csc.liv.ac.uk/~acps/home/).
 
+Prior to that, I worked as a camera engineer for [vivo Mobile Communication Ltd](https://www.vivo.com), focusing on Auto-Foucs & Image-Stablization.
 
 I got my M.Eng. degree at [MePro](http://mepro.bjtu.edu.cn) (Group Leader: Yao Zhao, IEEE Fellow), Beijing Jiaotong University, advised by Associate Prof. Meiqin Liu and Chao Yao.
 
