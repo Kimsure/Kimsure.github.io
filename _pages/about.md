@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-I’m a 1st-year Ph.D student at [MMT lab](https://jiminxiao.github.io), University of Liverpool, co-advised by Dr Siyue Yu, Prof. Jimin Xiao. I'm also fortunate to work closely with Prof. Xiaowei Huang, in [Trustworthy Autonomous Cyber-Physical Systems (ACPS) Lab](https://cgi.csc.liv.ac.uk/~acps/home/).
+I’m a 1st-year Ph.D student at [MMT lab](https://jiminxiao.github.io), University of Liverpool, co-advised by Dr. Siyue Yu and Prof. Jimin Xiao. I'm also fortunate to work closely with Dr. Yi Dong and Prof. Xiaowei Huang, in [Trustworthy Autonomous Cyber-Physical Systems (TACPS) Lab](https://cgi.csc.liv.ac.uk/~acps/home/).
 
 Prior to that, I worked as a camera engineer for [vivo Mobile Communication Ltd](https://www.vivo.com), focusing on Auto-Foucs & Image-Stablization.
 
@@ -26,7 +26,7 @@ I got my M.Eng. degree at [MePro](http://mepro.bjtu.edu.cn) (Group Leader: Yao Z
 
 
 
-My research interests cover a range of computer vision and deep learning, including image & video low-level vision, e.g. super-resolution, denoising, low-light enhancement, etc. and semantic segmentation under various supervisory conditions, including weakly supervised, zero-shot and continual learning environments. Currently, my research is primarily concentrated on open-vocabulary segmentation tasks and semantic-guided low-level vision.
+My research interests cover a range of computer vision and deep learning, including image & video low-level vision, e.g. super-resolution, denoising, low-light enhancement, etc. and semantic segmentation under various supervisory conditions, including weakly supervised, zero-shot and continual learning environments. My research is primarily concentrated on open-vocabulary segmentation tasks and semantic-guided low-level vision.
 
 <!--
 neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
