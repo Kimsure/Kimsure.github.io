@@ -137,6 +137,20 @@ function selectGame(game) {
   const selectedGame = document.getElementById(`${game}-game`);
   if (selectedGame) {
     selectedGame.style.display = 'block';
+    // 重新初始化游戏画布
+    const canvas = selectedGame.querySelector('canvas');
+    if (canvas) {
+      const container = canvas.parentElement;
+      canvas.width = container.clientWidth;
+      canvas.height = 400;
+      
+      // 初始化对应的游戏
+      if (game === 'snake') {
+        new SnakeGame(canvas);
+      } else if (game === 'tetris') {
+        new TetrisGame(canvas);
+      }
+    }
   }
 }
 </script>
