@@ -2,8 +2,22 @@
 permalink: /funzone/
 title: "Fun Zone"
 except: "Play Snake Game"
-author_profile: true
+author_profile: false
+layout: default
 ---
+
+<style>
+body { 
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.masthead, .page__footer { display: none; }
+</style>
 
 <div style="width: 100%; max-width: 800px; margin: 20px auto; padding: 20px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
     <h3 style="text-align: center; margin-bottom: 15px;">Snake Game</h3>
