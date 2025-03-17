@@ -10,6 +10,7 @@ class SnakeGame {
         this.direction = 'right';
         this.score = 0;
         this.gameOver = false;
+        this.isPaused = false;
         this.speed = 150;
         this.lastRenderTime = 0;
         this.init();
@@ -37,6 +38,17 @@ class SnakeGame {
     }
 
     handleKeyPress(event) {
+        if (event.code === 'Space' && !this.gameOver) {
+            this.isPaused = !this.isPaused;
+            if (!this.isPaused) {
+                this.lastRenderTime = performance.now();
+                requestAnimationFrame(this.gameLoop.bind(this));
+            }
+            return;
+        }
+
+        if (this.isPaused) return;
+
         const keyMap = {
             'ArrowUp': 'up',
             'ArrowDown': 'down',
@@ -101,6 +113,18 @@ class SnakeGame {
         }
     }
 
+    drawPauseScreen() {
+        this.ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
+        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+        
+        this.ctx.fillStyle = '#fff';
+        this.ctx.font = '30px Arial';
+        this.ctx.textAlign = 'center';
+        this.ctx.fillText('游戏暂停', this.canvas.width / 2, this.canvas.height / 2);
+        this.ctx.font = '20px Arial';
+        this.ctx.fillText('按空格键继续', this.canvas.width / 2, this.canvas.height / 2 + 40);
+    }
+
     draw() {
         // Clear canvas
         this.ctx.fillStyle = '#f8f9fa';
@@ -158,6 +182,7 @@ class SnakeGame {
         this.direction = 'right';
         this.score = 0;
         this.gameOver = false;
+        this.isPaused = false;
         this.speed = 150;
         this.generateFood();
     }
@@ -171,6 +196,11 @@ class SnakeGame {
                 }
             };
             document.addEventListener('keydown', handleRestart);
+            return;
+        }
+
+        if (this.isPaused) {
+            this.drawPauseScreen();
             return;
         }
 

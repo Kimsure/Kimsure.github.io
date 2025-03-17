@@ -8,6 +8,7 @@ class TetrisGame {
         this.board = Array(this.rows).fill().map(() => Array(this.cols).fill(0));
         this.score = 0;
         this.gameOver = false;
+        this.isPaused = false;
         this.speed = 1000;
         this.lastRenderTime = 0;
         
@@ -65,6 +66,17 @@ class TetrisGame {
             }
             return;
         }
+
+        if (event.code === 'Space') {
+            this.isPaused = !this.isPaused;
+            if (!this.isPaused) {
+                this.lastRenderTime = performance.now();
+                requestAnimationFrame(this.gameLoop.bind(this));
+            }
+            return;
+        }
+
+        if (this.isPaused) return;
         
         switch(event.key) {
             case 'ArrowLeft':
@@ -160,6 +172,18 @@ class TetrisGame {
         }
     }
     
+    drawPauseScreen() {
+        this.ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
+        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+        
+        this.ctx.fillStyle = '#fff';
+        this.ctx.font = '30px Arial';
+        this.ctx.textAlign = 'center';
+        this.ctx.fillText('游戏暂停', this.canvas.width / 2, this.canvas.height / 2);
+        this.ctx.font = '20px Arial';
+        this.ctx.fillText('按空格键继续', this.canvas.width / 2, this.canvas.height / 2 + 40);
+    }
+
     draw() {
         // 清空画布
         this.ctx.fillStyle = '#f8f9fa';
@@ -228,6 +252,7 @@ class TetrisGame {
         this.board = Array(this.rows).fill().map(() => Array(this.cols).fill(0));
         this.score = 0;
         this.gameOver = false;
+        this.isPaused = false;
         this.speed = 1000;
         this.generateNewPiece();
     }
@@ -235,6 +260,11 @@ class TetrisGame {
     gameLoop(timestamp) {
         if (this.gameOver) {
             this.draw();
+            return;
+        }
+
+        if (this.isPaused) {
+            this.drawPauseScreen();
             return;
         }
         

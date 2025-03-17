@@ -123,10 +123,21 @@ body {
 </div>
 
 <script>
+let currentGame = null;
+
 function selectGame(game) {
   // 更新选中状态
   document.querySelectorAll('.game-card').forEach(card => card.classList.remove('active'));
   document.querySelector(`.game-card[onclick*="${game}"]`).classList.add('active');
+  
+  // 清理当前游戏实例
+  if (currentGame) {
+    // 移除事件监听器
+    document.removeEventListener('keydown', currentGame.handleKeyPress);
+    // 停止游戏循环
+    currentGame.gameOver = true;
+    currentGame = null;
+  }
   
   // 隐藏所有游戏
   document.querySelectorAll('[id$="-game"]').forEach(gameDiv => {
@@ -146,9 +157,9 @@ function selectGame(game) {
       
       // 初始化对应的游戏
       if (game === 'snake') {
-        new SnakeGame(canvas);
+        currentGame = new SnakeGame(canvas);
       } else if (game === 'tetris') {
-        new TetrisGame(canvas);
+        currentGame = new TetrisGame(canvas);
       }
     }
   }
