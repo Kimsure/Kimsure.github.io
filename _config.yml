@@ -87,7 +87,10 @@ exclude:
   - config
   - gulpfile.js
   - log
-  - node_modules
+  - "**/node_modules/**/*"
+  - "**/node_modules"
+  - "**/.pnpm/**/*"
+  - "**/.pnpm"
   - package.json
   - tmp
   - vendor

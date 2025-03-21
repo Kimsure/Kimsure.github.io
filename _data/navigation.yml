@@ -23,3 +23,6 @@ main:
 
   - title: "Fun Zone"
     url: "/funzone/"
+
+  - title: "Fun Test"
+    url: "/funtest/"
