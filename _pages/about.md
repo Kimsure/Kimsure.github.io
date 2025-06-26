@@ -34,10 +34,21 @@ neural machine translation and computer vision. I have published more than 100 p
 -->
 
 # 🔥 News
+- *2025.06*: &nbsp;🎉🎉 One paper accepted by ICCV 2025.
 - *2023.10*: &nbsp;🎉🎉 Two papers accepted by ACM MM 2023. 
 - *2023.04*: &nbsp;🎉🎉 One paper accepted by T-CSVT.
 
 # 📝 Publications 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2023</div><img src='images/SFP.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Feature Purification Matters: Suppressing Outlier Propagation for Training-Free Open-Vocabulary Semantic Segmentation](https://Kimsure.github.io)
+
+**Shuo Jin**, Siyue Yu, Bingfeng Zhang, Mingjie Sun, Yi Dong, Jimin Xiao
+<!-- [**Project**](https://github.com/jxtse/GEC_Metrics_LLM) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> | <a href="">Link to paper</a> -->
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2023</div><img src='images/KSNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
