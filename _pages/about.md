@@ -34,9 +34,10 @@ neural machine translation and computer vision. I have published more than 100 p
 -->
 
 # 🔥 News
-- *2025.06*: &nbsp;🎉🎉 One paper accepted by ICCV 2025.
-- *2023.10*: &nbsp;🎉🎉 Two papers accepted by ACM MM 2023. 
-- *2023.04*: &nbsp;🎉🎉 One paper accepted by T-CSVT.
+- *2025.08*: &nbsp;🎉🎉 Our paper SFP has been selected as ICCV25 **highligh** paper! Many thanks to all co-authors.
+- *2025.06*: &nbsp;🎉🎉 One paper is accepted by ICCV 2025.
+- *2023.10*: &nbsp;🎉🎉 Two papers are accepted by ACM MM 2023. 
+- *2023.04*: &nbsp;🎉🎉 One paper is accepted by T-CSVT.
 
 # 📝 Publications 
 
