@@ -86,6 +86,10 @@ Meiqin Liu, **Shuo Jin**, Chao Yao, Chunyu Lin, Yao Zhao
 - *2023.03* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2023.06* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 -->
+# 📖 Patents
+
+- A Co-salient Object Detection Algorithm Based on Democratic Prototype Feature Mining, CN119963800A
+
 # 📖 Educations
 
 - *2024.09 - present*, Ph.D in Computer Science, University of Liverpool.
@@ -98,8 +102,8 @@ Meiqin Liu, **Shuo Jin**, Chao Yao, Chunyu Lin, Yao Zhao
 
 # 💻 Works & Internships
 
-- *2023.07 - 2024.08*, vivo Mobile Communication Ltd. (full-time)
+- *2023.07 - 2024.08*, vivo Mobile Communication Ltd.
 
 # 💻 Social Work
 
-Reviewer for ACMMM, ICCV, TIP.
+Reviewer for ACMMM, ICCV, AAAI, TIP.
