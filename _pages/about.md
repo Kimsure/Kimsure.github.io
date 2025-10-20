@@ -86,7 +86,7 @@ Yuqi Jiang, Chune ZHANG, **Shuo Jin**, Jiao Liu, Jiapeng Wang
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-CSVT</div><img src='images/TCNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Temporal consistency learning of inter-frames for video super-resolution]
+Temporal consistency learning of inter-frames for video super-resolution
 Meiqin Liu, **Shuo Jin**, Chao Yao, Chunyu Lin, Yao Zhao
 <!-- [**Project**](https://github.com/jxtse/GEC_Metrics_LLM) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> | <a href="">Link to paper</a> -->
 </div>
