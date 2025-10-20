@@ -44,42 +44,56 @@ neural machine translation and computer vision. I have published more than 100 p
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025 highlight</div><img src='images/SFP.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Feature Purification Matters: Suppressing Outlier Propagation for Training-Free Open-Vocabulary Semantic Segmentation](../images/files/iccv25_sfp_full.pdf)
+Feature Purification Matters: Suppressing Outlier Propagation for Training-Free Open-Vocabulary Semantic Segmentation
 
 **Shuo Jin**, Siyue Yu, Bingfeng Zhang, Mingjie Sun, Yi Dong, Jimin Xiao
 <!-- [**Project**](https://github.com/jxtse/GEC_Metrics_LLM) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> | <a href="">Link to paper</a> -->
 </div>
 </div>
 
+[[PDF]]([../images/files/iccv25_sfp_full.pdf](https://openaccess.thecvf.com/content/ICCV2025/papers/Jin_Feature_Purification_Matters_Suppressing_Outlier_Propagation_for_Training-Free_Open-Vocabulary_Semantic_ICCV_2025_paper.pdf))
+[[Code]](https://github.com/Kimsure/SFP)
+[[Poster]](../images/poster/poster_iccv25_09317.pdf)
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2023</div><img src='images/KSNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Kernel Dimension Matters: To Activate Available Kernels for Real-time Video Super-Resolution](https://dl.acm.org/doi/pdf/10.1145/3581783.3611908)
+Kernel Dimension Matters: To Activate Available Kernels for Real-time Video Super-Resolution
 
 **Shuo Jin**, Meiqin Liu, Chao Yao, Chunyu Lin, Yao Zhao
 <!-- [**Project**](https://github.com/jxtse/GEC_Metrics_LLM) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> | <a href="">Link to paper</a> -->
 </div>
 </div>
 
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3581783.3611908)
+[[Code]](https://github.com/Kimsure/KSNet)
+[[Poster]](../images/poster/poster_acm_0942.pdf)
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2023</div><img src='images/CLG-INet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[CLG-INet: Coupled Local-Global Interactive Network for Image Restoration](https://dl.acm.org/doi/pdf/10.1145/3581783.3612251)
+CLG-INet: Coupled Local-Global Interactive Network for Image Restoration
 
 Yuqi Jiang, Chune ZHANG, **Shuo Jin**, Jiao Liu, Jiapeng Wang
 <!-- [**Project**](https://github.com/jxtse/GEC_Metrics_LLM) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> | <a href="">Link to paper</a> -->
 </div>
 </div>
 
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3581783.3612251)
+[[Code]](https://kimsure.github.io)
+[[Poster]](../images/poster/poster_acm_CLGINet.pdf)
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-CSVT</div><img src='images/TCNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Temporal consistency learning of inter-frames for video super-resolution](https://ieeexplore.ieee.org/abstract/document/9919163)
-
+[Temporal consistency learning of inter-frames for video super-resolution]
 Meiqin Liu, **Shuo Jin**, Chao Yao, Chunyu Lin, Yao Zhao
 <!-- [**Project**](https://github.com/jxtse/GEC_Metrics_LLM) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> | <a href="">Link to paper</a> -->
 </div>
 </div>
+
+[[PDF]](https://ieeexplore.ieee.org/abstract/document/9919163)
+[[Code]](https://github.com/Kimsure/TCNet)
 
 <!--
 # 🎖 Honors and Awards
