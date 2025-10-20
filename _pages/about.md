@@ -48,7 +48,7 @@ Feature Purification Matters: Suppressing Outlier Propagation for Training-Free 
 
 **Shuo Jin**, Siyue Yu, Bingfeng Zhang, Mingjie Sun, Yi Dong, Jimin Xiao
 
-[[PDF]]([../images/files/iccv25_sfp_full.pdf](https://openaccess.thecvf.com/content/ICCV2025/papers/Jin_Feature_Purification_Matters_Suppressing_Outlier_Propagation_for_Training-Free_Open-Vocabulary_Semantic_ICCV_2025_paper.pdf))
+[[PDF]](https://openaccess.thecvf.com/content/ICCV2025/papers/Jin_Feature_Purification_Matters_Suppressing_Outlier_Propagation_for_Training-Free_Open-Vocabulary_Semantic_ICCV_2025_paper.pdf)
 [[Code]](https://github.com/Kimsure/SFP)
 [[Poster]](../images/poster/poster_iccv25_09317.pdf)
 <!-- [**Project**](https://github.com/jxtse/GEC_Metrics_LLM) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> | <a href="">Link to paper</a> -->
