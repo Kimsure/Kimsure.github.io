@@ -77,7 +77,7 @@ CLG-INet: Coupled Local-Global Interactive Network for Image Restoration
 Yuqi Jiang, Chune ZHANG, **Shuo Jin**, Jiao Liu, Jiapeng Wang
 
 [[PDF]](https://dl.acm.org/doi/pdf/10.1145/3581783.3612251)
-[[Code]](https://kimsure.github.io)
+[[Code]](https://openreview.net/profile?id=~Yuqi_Jiang2)
 [[Poster]](../images/poster/poster_acm_CLGINet.pdf)
 <!-- [**Project**](https://github.com/jxtse/GEC_Metrics_LLM) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> | <a href="">Link to paper</a> -->
 </div>
