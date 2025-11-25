@@ -63,7 +63,7 @@ Kernel Dimension Matters: To Activate Available Kernels for Real-time Video Supe
 
 **Shuo Jin**, Meiqin Liu, Chao Yao, Chunyu Lin, Yao Zhao
 
-[![project](https://img.shields.io/badge/Project-KSNet-green)](https://github.com/Kimsure/KSNet)    [![arXiv](https://img.shields.io/badge/Paper-ACMMM-b31b1b)](https://dl.acm.org/doi/pdf/10.1145/3581783.3611908) [![Poster](https://img.shields.io/badge/Poster-KSNet-yellow)](../images/poster/poster_acm_0942.pdf)<a href="#LICENSE--citation"><img alt="License: MIT" src="https://img.shields.io/badge/LICENSE-MIT-blue.svg"/></a>
+[![project](https://img.shields.io/badge/Project-KSNet-green)](https://github.com/Kimsure/KSNet)    [![arXiv](https://img.shields.io/badge/Paper-ACMMM-b31b1b)](https://dl.acm.org/doi/pdf/10.1145/3581783.3611908) [![Poster](https://img.shields.io/badge/Poster-KSNet-yellow)](../images/poster/poster_acm_0942.pdf) <a href="#LICENSE--citation"><img alt="License: MIT" src="https://img.shields.io/badge/LICENSE-MIT-blue.svg"/></a>
 <!-- [[PDF]](https://dl.acm.org/doi/pdf/10.1145/3581783.3611908) -->
 <!-- [[Code]](https://github.com/Kimsure/KSNet)
 [[Poster]](../images/poster/poster_acm_0942.pdf) -->
