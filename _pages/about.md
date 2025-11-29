@@ -27,8 +27,8 @@ I got my M.Eng. degree at [MePro](http://mepro.bjtu.edu.cn) (Group Leader: Yao Z
 
 
 
-My research interests cover a range of computer vision and deep learning, including image & video low-level vision, e.g. super-resolution, denoising, low-light enhancement, etc. and semantic segmentation under various conditions, including weakly-supervised, self-supervised and zero-shot learning environments. My research is primarily concentrated on open-vocabulary segmentation tasks, multi-modal visual grounding and semantic-guided low-level vision.
-
+My research interests cover a range of computer vision and deep learning. Currentl, my research is primarily concentrated on open-vocabulary dense perception, multimodal visual grounding and multimodal LLM.
+<!-- including image & video low-level vision, e.g. super-resolution, denoising, low-light enhancement, etc. and semantic segmentation under various conditions, including weakly-supervised, self-supervised and zero-shot learning environments. -->
 <!--
 neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
 -->
@@ -108,7 +108,7 @@ Meiqin Liu, **Shuo Jin**, Chao Yao, Chunyu Lin, Yao Zhao
 - *2023.03* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2023.06* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 -->
-# 📖 Patents
+# 🎖 Patents
 
 - A Co-salient Object Detection Algorithm Based on Democratic Prototype Feature Mining, CN119963800A
 
@@ -126,6 +126,6 @@ Meiqin Liu, **Shuo Jin**, Chao Yao, Chunyu Lin, Yao Zhao
 
 - *2023.07 - 2024.08*, vivo Mobile Communication Ltd.
 
-# 💻 Social Work
+# 💬 Social Work
 
 Reviewer for ACMMM, ICCV, AAAI, TIP.
