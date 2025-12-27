@@ -128,4 +128,4 @@ Meiqin Liu, **Shuo Jin**, Chao Yao, Chunyu Lin, Yao Zhao
 
 # 💬 Social Work
 
-Reviewer for ACMMM, ICCV, AAAI, TIP.
+Reviewer for IEEE T-IP, ACMMM2025, ICCV2025, AAAI2026, CVPR2025/2026.
