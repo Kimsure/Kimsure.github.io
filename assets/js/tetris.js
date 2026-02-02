@@ -5,12 +5,16 @@ class TetrisGame {
         this.blockSize = blockSize;
         this.cols = Math.floor(canvas.width / blockSize);
         this.rows = Math.floor(canvas.height / blockSize);
-        this.board = Array(this.rows).fill().map(() => Array(this.cols).fill(0));
+        this.board = [];
         this.score = 0;
+        this.lines = 0;
+        this.level = 1;
         this.gameOver = false;
         this.isPaused = false;
         this.speed = 1000;
         this.lastRenderTime = 0;
+        this.animationId = null;
+        this.keyHandler = this.handleKeyPress.bind(this);
         
         // 定义俄罗斯方块的形状
         this.shapes = [
@@ -42,14 +46,52 @@ class TetrisGame {
     }
     
     init() {
+        this.reset();
+        document.addEventListener('keydown', this.keyHandler);
+    }
+
+    destroy() {
+        this.gameOver = true;
+        this.isPaused = true;
+        if (this.animationId) {
+            cancelAnimationFrame(this.animationId);
+            this.animationId = null;
+        }
+        document.removeEventListener('keydown', this.keyHandler);
+    }
+
+    reset() {
+        this.board = Array(this.rows).fill().map(() => Array(this.cols).fill(0));
+        this.score = 0;
+        this.lines = 0;
+        this.level = 1;
+        this.gameOver = false;
+        this.isPaused = false;
+        this.speed = 1000;
+        this.lastRenderTime = performance.now();
+        this.currentPiece = null;
+        
         this.generateNewPiece();
-        document.addEventListener('keydown', this.handleKeyPress.bind(this));
-        requestAnimationFrame(this.gameLoop.bind(this));
+        this.updateScoreDisplay();
+        
+        if (this.animationId) {
+            cancelAnimationFrame(this.animationId);
+        }
+        this.animationId = requestAnimationFrame(this.gameLoop.bind(this));
+    }
+    
+    togglePause() {
+        if (this.gameOver) return;
+        this.isPaused = !this.isPaused;
+        if (!this.isPaused) {
+            this.lastRenderTime = performance.now();
+            this.animationId = requestAnimationFrame(this.gameLoop.bind(this));
+        }
     }
     
     generateNewPiece() {
         const randomIndex = Math.floor(Math.random() * this.shapes.length);
-        this.currentPiece = this.shapes[randomIndex];
+        this.currentPiece = this.shapes[randomIndex].map(row => [...row]);
         this.currentPieceColor = this.colors[randomIndex];
         this.currentX = Math.floor((this.cols - this.currentPiece[0].length) / 2);
         this.currentY = 0;
@@ -60,48 +102,60 @@ class TetrisGame {
     }
     
     handleKeyPress(event) {
-        if (this.gameOver) {
-            if (event.code === 'Space') {
-                this.reset();
-            }
-            return;
-        }
-
         if (event.code === 'Space') {
-            this.isPaused = !this.isPaused;
-            if (!this.isPaused) {
-                this.lastRenderTime = performance.now();
-                requestAnimationFrame(this.gameLoop.bind(this));
+            event.preventDefault();
+            if (this.gameOver) {
+                this.reset();
+            } else {
+                this.togglePause();
+                updatePauseButton('tetris');
             }
             return;
         }
 
-        if (this.isPaused) return;
+        if (this.isPaused || this.gameOver) return;
         
         switch(event.key) {
             case 'ArrowLeft':
             case 'a':
+            case 'A':
+                event.preventDefault();
                 if (!this.checkCollision(this.currentPiece, this.currentX - 1, this.currentY)) {
                     this.currentX--;
                 }
                 break;
             case 'ArrowRight':
             case 'd':
+            case 'D':
+                event.preventDefault();
                 if (!this.checkCollision(this.currentPiece, this.currentX + 1, this.currentY)) {
                     this.currentX++;
                 }
                 break;
             case 'ArrowDown':
             case 's':
+            case 'S':
+                event.preventDefault();
                 if (!this.checkCollision(this.currentPiece, this.currentX, this.currentY + 1)) {
                     this.currentY++;
+                    this.score += 1; // 软降奖励
+                    this.updateScoreDisplay();
                 }
                 break;
             case 'ArrowUp':
             case 'w':
+            case 'W':
+                event.preventDefault();
                 const rotated = this.rotate(this.currentPiece);
+                // 尝试旋转，如果碰撞则尝试墙踢
                 if (!this.checkCollision(rotated, this.currentX, this.currentY)) {
                     this.currentPiece = rotated;
+                } else if (!this.checkCollision(rotated, this.currentX - 1, this.currentY)) {
+                    this.currentPiece = rotated;
+                    this.currentX--;
+                } else if (!this.checkCollision(rotated, this.currentX + 1, this.currentY)) {
+                    this.currentPiece = rotated;
+                    this.currentX++;
                 }
                 break;
         }
@@ -167,94 +221,166 @@ class TetrisGame {
         }
         
         if (linesCleared > 0) {
-            this.score += linesCleared * 100;
-            this.speed = Math.max(100, 1000 - Math.floor(this.score / 1000) * 100);
+            this.lines += linesCleared;
+            // 计分系统：1行100，2行300，3行600，4行1000
+            const points = [0, 100, 300, 600, 1000];
+            this.score += points[linesCleared] * this.level;
+            
+            // 每10行升一级
+            this.level = Math.floor(this.lines / 10) + 1;
+            
+            // 速度随等级增加
+            this.speed = Math.max(100, 1000 - (this.level - 1) * 100);
+            
+            this.updateScoreDisplay();
         }
+    }
+
+    updateScoreDisplay() {
+        const scoreEl = document.getElementById('tetris-score');
+        const linesEl = document.getElementById('tetris-lines');
+        const levelEl = document.getElementById('tetris-level');
+        
+        if (scoreEl) scoreEl.textContent = this.score;
+        if (linesEl) linesEl.textContent = this.lines;
+        if (levelEl) levelEl.textContent = this.level;
     }
     
     drawPauseScreen() {
-        this.ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
+        this.ctx.save();
+        
+        this.ctx.fillStyle = 'rgba(0, 0, 0, 0.6)';
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
         
         this.ctx.fillStyle = '#fff';
-        this.ctx.font = '30px Arial';
+        this.ctx.font = 'bold 36px Arial';
         this.ctx.textAlign = 'center';
-        this.ctx.fillText('游戏暂停', this.canvas.width / 2, this.canvas.height / 2);
-        this.ctx.font = '20px Arial';
-        this.ctx.fillText('按空格键继续', this.canvas.width / 2, this.canvas.height / 2 + 40);
+        this.ctx.textBaseline = 'middle';
+        this.ctx.fillText('游戏暂停', this.canvas.width / 2, this.canvas.height / 2 - 20);
+        this.ctx.font = '18px Arial';
+        this.ctx.fillText('按空格键或点击继续按钮继续', this.canvas.width / 2, this.canvas.height / 2 + 25);
+        
+        this.ctx.restore();
     }
 
     draw() {
         // 清空画布
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        
+        // 绘制背景
         this.ctx.fillStyle = '#f8f9fa';
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
         
-        // 绘制已固定的方块
+        // 绘制网格
+        this.ctx.strokeStyle = '#e9ecef';
+        this.ctx.lineWidth = 0.5;
+        for (let i = 0; i <= this.cols; i++) {
+            this.ctx.beginPath();
+            this.ctx.moveTo(i * this.blockSize, 0);
+            this.ctx.lineTo(i * this.blockSize, this.canvas.height);
+            this.ctx.stroke();
+        }
+        for (let i = 0; i <= this.rows; i++) {
+            this.ctx.beginPath();
+            this.ctx.moveTo(0, i * this.blockSize);
+            this.ctx.lineTo(this.canvas.width, i * this.blockSize);
+            this.ctx.stroke();
+        }
+        
+        // 绘制已固定的方块（带3D效果）
         for (let r = 0; r < this.rows; r++) {
             for (let c = 0; c < this.cols; c++) {
                 if (this.board[r][c]) {
-                    this.ctx.fillStyle = this.board[r][c];
-                    this.ctx.fillRect(
-                        c * this.blockSize,
-                        r * this.blockSize,
-                        this.blockSize - 1,
-                        this.blockSize - 1
-                    );
+                    this.drawBlock(c, r, this.board[r][c]);
                 }
             }
         }
         
         // 绘制当前方块
         if (this.currentPiece) {
-            this.ctx.fillStyle = this.currentPieceColor;
+            // 绘制阴影（预览落点）
+            let ghostY = this.currentY;
+            while (!this.checkCollision(this.currentPiece, this.currentX, ghostY + 1)) {
+                ghostY++;
+            }
+            
+            this.ctx.globalAlpha = 0.3;
             for (let r = 0; r < this.currentPiece.length; r++) {
                 for (let c = 0; c < this.currentPiece[r].length; c++) {
                     if (this.currentPiece[r][c]) {
+                        this.ctx.fillStyle = '#666';
                         this.ctx.fillRect(
-                            (this.currentX + c) * this.blockSize,
-                            (this.currentY + r) * this.blockSize,
-                            this.blockSize - 1,
-                            this.blockSize - 1
+                            (this.currentX + c) * this.blockSize + 1,
+                            (ghostY + r) * this.blockSize + 1,
+                            this.blockSize - 2,
+                            this.blockSize - 2
                         );
+                    }
+                }
+            }
+            this.ctx.globalAlpha = 1;
+            
+            // 绘制当前方块
+            for (let r = 0; r < this.currentPiece.length; r++) {
+                for (let c = 0; c < this.currentPiece[r].length; c++) {
+                    if (this.currentPiece[r][c]) {
+                        this.drawBlock(this.currentX + c, this.currentY + r, this.currentPieceColor);
                     }
                 }
             }
         }
         
-        // 绘制分数
-        this.ctx.fillStyle = '#212529';
-        this.ctx.font = '20px Arial';
-        this.ctx.fillText(`Score: ${this.score}`, 10, 30);
-        
         if (this.gameOver) {
-            this.ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
-            this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-            
-            this.ctx.fillStyle = '#fff';
-            this.ctx.font = '30px Arial';
-            this.ctx.textAlign = 'center';
-            this.ctx.fillText('Game Over!', this.canvas.width / 2, this.canvas.height / 2);
-            this.ctx.font = '20px Arial';
-            this.ctx.fillText(
-                `Final Score: ${this.score}`,
-                this.canvas.width / 2,
-                this.canvas.height / 2 + 40
-            );
-            this.ctx.fillText(
-                'Press Space to Restart',
-                this.canvas.width / 2,
-                this.canvas.height / 2 + 80
-            );
+            this.drawGameOver();
         }
     }
-    
-    reset() {
-        this.board = Array(this.rows).fill().map(() => Array(this.cols).fill(0));
-        this.score = 0;
-        this.gameOver = false;
-        this.isPaused = false;
-        this.speed = 1000;
-        this.generateNewPiece();
+
+    drawBlock(x, y, color) {
+        const px = x * this.blockSize;
+        const py = y * this.blockSize;
+        const size = this.blockSize - 1;
+        
+        // 主体
+        this.ctx.fillStyle = color;
+        this.ctx.fillRect(px + 1, py + 1, size - 1, size - 1);
+        
+        // 高光（左上角）
+        this.ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
+        this.ctx.fillRect(px + 1, py + 1, size - 1, 3);
+        this.ctx.fillRect(px + 1, py + 1, 3, size - 1);
+        
+        // 阴影（右下角）
+        this.ctx.fillStyle = 'rgba(0, 0, 0, 0.3)';
+        this.ctx.fillRect(px + 1, py + size - 3, size - 1, 3);
+        this.ctx.fillRect(px + size - 3, py + 1, 3, size - 1);
+    }
+
+    drawGameOver() {
+        this.ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+        
+        this.ctx.fillStyle = '#fff';
+        this.ctx.font = 'bold 36px Arial';
+        this.ctx.textAlign = 'center';
+        this.ctx.textBaseline = 'middle';
+        this.ctx.fillText('游戏结束!', this.canvas.width / 2, this.canvas.height / 2 - 60);
+        this.ctx.font = '24px Arial';
+        this.ctx.fillText(
+            `最终得分: ${this.score}`,
+            this.canvas.width / 2,
+            this.canvas.height / 2 - 10
+        );
+        this.ctx.font = '18px Arial';
+        this.ctx.fillText(
+            `消除行数: ${this.lines} | 等级: ${this.level}`,
+            this.canvas.width / 2,
+            this.canvas.height / 2 + 30
+        );
+        this.ctx.fillText(
+            '按空格键或点击重新开始按钮',
+            this.canvas.width / 2,
+            this.canvas.height / 2 + 70
+        );
     }
     
     gameLoop(timestamp) {
@@ -264,11 +390,12 @@ class TetrisGame {
         }
 
         if (this.isPaused) {
+            this.draw();
             this.drawPauseScreen();
             return;
         }
         
-        requestAnimationFrame(this.gameLoop.bind(this));
+        this.animationId = requestAnimationFrame(this.gameLoop.bind(this));
         
         const secondsSinceLastRender = (timestamp - this.lastRenderTime) / 1000;
         if (secondsSinceLastRender < this.speed / 1000) {
@@ -289,17 +416,3 @@ class TetrisGame {
         this.draw();
     }
 }
-
-// 当页面加载完成时初始化游戏
-document.addEventListener('DOMContentLoaded', () => {
-    const canvas = document.getElementById('tetrisCanvas');
-    if (canvas) {
-        // 设置画布大小
-        const container = canvas.parentElement;
-        canvas.width = container.clientWidth;
-        canvas.height = 400;
-
-        // 初始化游戏
-        new TetrisGame(canvas);
-    }
-});
