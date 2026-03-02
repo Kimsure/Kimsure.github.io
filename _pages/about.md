@@ -18,12 +18,12 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-I’m a 1st-year Ph.D student at [MMT lab](https://jiminxiao.github.io), University of Liverpool, co-advised by Dr. Siyue Yu and Prof. Jimin Xiao. I'm also fortunate to work closely with Dr. [Mingjie Sun](https://scst.suda.edu.cn/0f/92/c11250a528274/page.htm) from [Soochow University](https://www.suda.edu.cn) and [Dr. Bingfeng Zhang](https://zbf1991.github.io/) from [China University of Petroleum (East China)](https://www.upc.edu.cn).
+I’m a 2nd-year Ph.D student at [MMT lab](https://jiminxiao.github.io), University of Liverpool, co-advised by Dr. Siyue Yu and Prof. Jimin Xiao. I'm also fortunate to work closely with Dr. [Mingjie Sun](https://scst.suda.edu.cn/0f/92/c11250a528274/page.htm) from [Soochow University](https://www.suda.edu.cn) and [Dr. Bingfeng Zhang](https://zbf1991.github.io/) from [China University of Petroleum (East China)](https://www.upc.edu.cn).
 <!-- Dr. Yi Dong and Prof. Xiaowei Huang, in [Trustworthy Autonomous Cyber-Physical Systems (TACPS) Lab](https://cgi.csc.liv.ac.uk/~acps/home/). -->
 
 Prior to that, I worked as a camera engineer for [vivo Mobile Communication Ltd](https://www.vivo.com), focusing on Auto-Foucs & Image-Stablization.
 
-I got my M.Eng. degree at [MePro](http://mepro.bjtu.edu.cn) (Group Leader: Yao Zhao, IEEE Fellow), Beijing Jiaotong University, advised by Associate Prof. Meiqin Liu and Chao Yao.
+I got my M.Eng. degree at [MePro](http://mepro.bjtu.edu.cn) in Beijing Jiaotong University led by [Yao Zhao](https://faculty.bjtu.edu.cn/5900/) (**IEEE Fellow**), advised by Prof. Meiqin Liu and Chao Yao.
 
 
 
@@ -34,6 +34,7 @@ neural machine translation and computer vision. I have published more than 100 p
 -->
 
 # 🔥 News
+- *2026.03*: &nbsp;🎉🎉 One Regular paper and One Finding paper are accepted by CVPR26.
 - *2025.08*: &nbsp;🎉🎉 Our paper SFP has been selected as ICCV25 **highligh** paper! Many thanks to all co-authors.
 - *2025.06*: &nbsp;🎉🎉 One paper is accepted by ICCV 2025.
 - *2023.10*: &nbsp;🎉🎉 Two papers are accepted by ACM MM 2023. 
