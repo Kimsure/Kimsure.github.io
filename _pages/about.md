@@ -114,6 +114,7 @@ Meiqin Liu, **Shuo Jin**, Chao Yao, Chunyu Lin, Yao Zhao
 - A Co-salient Object Detection Algorithm Based on Democratic Prototype Feature Mining, CN119963800A
 
 # 📖 Educations
+<span class='anchor' id='-educations'></span>
 
 - *2024.09 - present*, Ph.D in Computer Science, University of Liverpool.
 - *2021.09 - 2023.06*, M.Eng in Electronic Engineering, Beijing Jiaotong University.
@@ -124,9 +125,17 @@ Meiqin Liu, **Shuo Jin**, Chao Yao, Chunyu Lin, Yao Zhao
 -->
 
 # 💻 Works & Internships
+<span class='anchor' id='-internships'></span>
 
 - *2023.07 - 2024.08*, vivo Mobile Communication Ltd.
 
 # 💬 Social Work
 
 Reviewer for IEEE T-IP, ACMMM2025, ICCV2025, AAAI2026, CVPR2025/2026.
+
+# 🎓 Teaching
+<span class='anchor' id='-teaching'></span>
+
+- INT305: Machine Learning (Undergraduate course @ XJTLU), TA
+
+- INT302: Image Processing (Undergraduate course @ XJTLU), TA
