@@ -42,6 +42,37 @@ neural machine translation and computer vision. I have published more than 100 p
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='images/TFSSD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+TF-SSD: A Strong Pipeline via Synergic Mask Filter for Training-free Co-salient Object Detection
+
+Zhijin He\*, **Shuo Jin\***, Siyue Yu, Shuwei Wu, Bingfeng Zhang, Li Yu, Jimin Xiao
+
+[![project](https://img.shields.io/badge/Project-TFSSD-green)](https://github.com/hzz-yy/TF-SSD)    [![arXiv](https://img.shields.io/badge/Paper-CVPR-b31b1b)](https://github.com/hzz-yy/TF-SSD) [![Poster](https://img.shields.io/badge/Poster-TFSSD-yellow)]() <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
+<!-- [[PDF]](https://openaccess.thecvf.com/content/ICCV2025/papers/Jin_Feature_Purification_Matters_Suppressing_Outlier_Propagation_for_Training-Free_Open-Vocabulary_Semantic_ICCV_2025_paper.pdf)
+[[Code]](https://github.com/Kimsure/SFP)
+[[Poster]](../images/poster/poster_iccv25_09317.pdf) -->
+<!-- [**Project**](https://github.com/jxtse/GEC_Metrics_LLM) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> | <a href="">Link to paper</a> -->
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"> CVPR 2026 Findings </div><img src='images/TALENT.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+TALENT: Target-aware Efficient Tuning for Referring Image Segmentation
+
+**Shuo Jin**, Siyue Yu, Bingfeng Zhang, Chao Yao, Meiqin Liu, Jimin Xiao
+
+[![project](https://img.shields.io/badge/Project-TALENT-green)](https://github.com/Kimsure/TALENT)    [![arXiv](https://img.shields.io/badge/Paper-CVPR-b31b1b)]() [![Poster](https://img.shields.io/badge/Poster-TALENT-yellow)]() <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
+<!-- [[PDF]](https://openaccess.thecvf.com/content/ICCV2025/papers/Jin_Feature_Purification_Matters_Suppressing_Outlier_Propagation_for_Training-Free_Open-Vocabulary_Semantic_ICCV_2025_paper.pdf)
+[[Code]](https://github.com/Kimsure/SFP)
+[[Poster]](../images/poster/poster_iccv25_09317.pdf) -->
+<!-- [**Project**](https://github.com/jxtse/GEC_Metrics_LLM) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> | <a href="">Link to paper</a> -->
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025 highlight</div><img src='images/SFP.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
