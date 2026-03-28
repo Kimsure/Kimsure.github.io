@@ -45,7 +45,7 @@ neural machine translation and computer vision. I have published more than 100 p
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='images/TFSSD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-TF-SSD: A Strong Pipeline via Synergic Mask Filter for Training-free Co-salient Object Detection
+TF-SSD: A Strong Pipeline via Synergic Mask Filter for Training-free Co-salient Object Detection (*Equal contribution)
 
 Zhijin He\*, **Shuo Jin\***, Siyue Yu, Shuwei Wu, Bingfeng Zhang, Li Yu, Jimin Xiao
 
