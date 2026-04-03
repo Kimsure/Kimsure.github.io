@@ -49,7 +49,7 @@ TF-SSD: A Strong Pipeline via Synergic Mask Filter for Training-free Co-salient 
 
 Zhijin He\*, **Shuo Jin\***, Siyue Yu, Shuwei Wu, Bingfeng Zhang, Li Yu, Jimin Xiao
 
-[![project](https://img.shields.io/badge/Project-TFSSD-green)](https://github.com/hzz-yy/TF-SSD)    [![arXiv](https://img.shields.io/badge/Paper-CVPR-b31b1b)](https://arxiv.org/pdf/2604.00549) [![Poster](https://img.shields.io/badge/Poster-TFSSD-yellow)]() <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
+[![project](https://img.shields.io/badge/Project-TFSSD-green)](https://github.com/hzz-yy/TF-SSD)    [![arXiv](https://img.shields.io/badge/Paper-CVPR-b31b1b)](https://arxiv.org/abs/2604.00549) [![Poster](https://img.shields.io/badge/Poster-TFSSD-yellow)]() <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
 </div>
 </div>
 
