@@ -183,7 +183,7 @@ h1:before, .anchor:before {
  */
 
 .gradient-text {
-    background: linear-gradient(90deg, $morandi-dark 0%, $morandi-red-dark 100%);
+    background: linear-gradient(90deg, $morandi-primary 0%, $morandi-red-dark 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
