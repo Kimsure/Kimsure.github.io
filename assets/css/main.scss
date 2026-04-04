@@ -40,70 +40,313 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+/*
+ *    Morandi Blue Color System
+ *    ==========================================================================
+ */
+
+$morandi-primary       : #6B8E9F;    // Dusty blue
+$morandi-secondary     : #8FA7B3;    // Muted blue-gray
+$morandi-accent       : #B5C7D3;    // Light blue-gray
+$morandi-light        : #E8EEF2;     // Very light blue-gray
+$morandi-dark         : #4A6670;     // Deep dusty blue
+$morandi-gradient-1   : #7A9CAD;    // Gradient start
+$morandi-gradient-2   : #9BB5C4;     // Gradient end
+
+/*
+ *    Paper Box Styles
+ *    ==========================================================================
+ */
+
 .paper-box {
     display: flex;
     justify-content: left;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
-    
+    position: relative;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%);
+    border: 1px solid #e5edf0;
+    border-radius: 12px;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    box-shadow: 0 2px 8px rgba(107, 142, 159, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     .paper-box-image{
         justify-content: center;
         display: flex;
         width: 100%;
         order: 2;
+        position: relative;
+
         img {
-            max-width: 400px;
-            box-shadow: 3px 3px 6px #888;
+            max-width: 350px;
+            box-shadow: 0 4px 12px rgba(74, 102, 112, 0.15);
             object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
     }
-    
+
     .paper-box-text{
         max-width: 100%;
         order: 1;
+
+        h3 {
+            color: $morandi-dark;
+            font-weight: 600;
+            margin-bottom: 0.5em;
+            font-size: 1.1em;
+            line-height: 1.4;
+        }
+
+        p {
+            color: #6B7B8A;
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 0.3em;
+        }
     }
-    
+
     @include breakpoint($medium) {
         .paper-box-image{
             justify-content: left;
-            min-width: 200px;
-            max-width: 40%;
+            min-width: 180px;
+            max-width: 35%;
             order: 1;
         }
-        
+
         .paper-box-text{
             justify-content: left;
-            padding-left: 2em;
-            max-width: 60%;
+            padding-left: 1.5em;
+            max-width: 65%;
             order: 2;
         }
-
     }
 
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(107, 142, 159, 0.12);
+        border-color: $morandi-accent;
 
+        .paper-box-image img {
+            transform: scale(1.02);
+            box-shadow: 0 6px 16px rgba(74, 102, 112, 0.2);
+        }
+    }
 }
 
 $scroll_offset : 2em;
-h1:before, .anchor:before { 
-    content: ''; 
-    display: block; 
-    position: relative; 
-    width: 0; 
-    height: $scroll_offset; 
+h1:before, .anchor:before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 0;
+    height: $scroll_offset;
     margin-top: -$scroll_offset;
 }
 
+/*
+ *    Paper Badge (Top-left of card)
+ *    ==========================================================================
+ */
+
 .badge {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0.4em 0.9em;
     position: absolute;
-    margin-top: .5em;
-    margin-left: -.5em;
-    color: white;
-    background-color: #00369f;
-    font-size: .8em;
+    top: 1em;
+    left: 1em;
+    color: #ffffff;
+    font-size: 0.75em;
+    font-weight: 600;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+/*
+ *    Section Headers (News, Publications, Education, etc.)
+ *    ==========================================================================
+ */
+
+.page__content {
+
+    > h1 {
+        color: $morandi-dark;
+        font-size: 1.5em;
+        font-weight: 600;
+        padding-bottom: 0.5em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        border-bottom: 2px solid $morandi-light;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, $morandi-primary 0%, $morandi-accent 100%);
+            border-radius: 2px;
+        }
+    }
+
+    > h2 {
+        color: $morandi-dark;
+        font-size: 1.3em;
+        font-weight: 600;
+        padding-bottom: 0.4em;
+        margin-top: 1.8em;
+        margin-bottom: 0.8em;
+        border-bottom: 1px solid $morandi-light;
+    }
+}
+
+/*
+ *    Simple List Styling (News, Patents, Educations, Works, Teaching)
+ *    ==========================================================================
+ */
+
+.page__content ul:not(.social-icons):not(.author__urls):not(.repo-grid):not(.paper-box) {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        position: relative;
+        padding: 0.4em 0 0.4em 1.5em;
+        color: #5A6A7A;
+        font-size: 0.95em;
+        line-height: 1.6;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0.4em;
+            top: 0.85em;
+            width: 6px;
+            height: 6px;
+            background: linear-gradient(135deg, $morandi-primary 0%, $morandi-accent 100%);
+            border-radius: 50%;
+        }
+
+        strong {
+            color: $morandi-dark;
+            font-weight: 600;
+        }
+    }
+}
+
+/*
+ *    Social Icons Color Enhancement (Morandi)
+ *    ==========================================================================
+ */
+
+.author__urls {
+    li i {
+        color: $morandi-primary;
+    }
+
+    a {
+        transition: all 0.2s ease;
+        color: #5A6A7A;
+
+        &:hover {
+            color: $morandi-primary;
+            padding-left: 4px;
+        }
+    }
+}
+
+/*
+ *    Masthead Link Hover Effect
+ *    ==========================================================================
+ */
+
+.masthead__menu-item a {
+    position: relative;
+    transition: color 0.2s ease;
+    color: $morandi-dark;
+
+    &:hover {
+        color: $morandi-primary;
+    }
+}
+
+/*
+ *    Sidebar Avatar Enhancement
+ *    ==========================================================================
+ */
+
+.author__avatar img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid $morandi-light;
+
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 12px rgba(107, 142, 159, 0.25);
+        border-color: $morandi-accent;
+    }
+}
+
+/*
+ *    Link Color Enhancement (Morandi)
+ *    ==========================================================================
+ */
+
+a {
+    transition: color 0.2s ease;
+    color: $morandi-primary;
+
+    &:hover {
+        color: $morandi-dark;
+    }
+}
+
+.page__content a {
+    transition: all 0.2s ease;
+    color: $morandi-primary;
+
+    &:hover {
+        color: $morandi-dark;
+    }
+}
+
+/*
+ *    Section Dividers
+ *    ==========================================================================
+ */
+
+.page__content hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, $morandi-light 50%, transparent 100%);
+    margin: 2em 0;
+}
+
+/*
+ *    Footer
+ *    ==========================================================================
+ */
+
+.site-footer {
+    margin-top: 3em;
+    padding-top: 2em;
+    border-top: 1px solid $morandi-light;
+    color: $morandi-secondary;
+}
+
+/*
+ *    Responsive Adjustments
+ *    ==========================================================================
+ */
+
+@include breakpoint($medium) {
+    .paper-box {
+        padding: 2em;
+    }
 }
