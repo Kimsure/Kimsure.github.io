@@ -49,7 +49,7 @@ TF-SSD: A Strong Pipeline via Synergic Mask Filter for Training-free Co-salient 
 
 Zhijin He\*, **Shuo Jin\***, Siyue Yu, Shuwei Wu, Bingfeng Zhang, Li Yu, Jimin Xiao
 
-[![project](https://img.shields.io/badge/Project-TFSSD-green)](https://github.com/hzz-yy/TF-SSD)    [![arXiv](https://img.shields.io/badge/Paper-CVPR-b31b1b)](https://arxiv.org/abs/2604.00549) [![Poster](https://img.shields.io/badge/Poster-TFSSD-yellow)]() <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
+[![project](https://img.shields.io/badge/Project-TFSSD-green)](https://github.com/hzz-yy/TF-SSD)    [![arXiv](https://img.shields.io/badge/Paper-CVPR-b31b1b)](https://arxiv.org/abs/2604.00549) [![Poster](https://img.shields.io/badge/Poster-TFSSD-yellow)](../images/files/CVPR26_HZJ_arxiv.pdf) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
 </div>
 </div>
 
@@ -60,7 +60,7 @@ TALENT: Target-aware Efficient Tuning for Referring Image Segmentation
 
 **Shuo Jin**, Siyue Yu, Bingfeng Zhang, Chao Yao, Meiqin Liu, Jimin Xiao
 
-[![project](https://img.shields.io/badge/Project-TALENT-green)](https://github.com/Kimsure/TALENT)    [![arXiv](https://img.shields.io/badge/Paper-CVPR-b31b1b)](https://arxiv.org/abs/2604.00609) [![Poster](https://img.shields.io/badge/Poster-TALENT-yellow)]() <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
+[![project](https://img.shields.io/badge/Project-TALENT-green)](https://github.com/Kimsure/TALENT)    [![arXiv](https://img.shields.io/badge/Paper-CVPR-b31b1b)](https://arxiv.org/abs/2604.00609) [![Poster](https://img.shields.io/badge/Poster-TALENT-yellow)](../images/files/CVPR26_TALENT_CR.pdf) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
 </div>
 </div>
 
