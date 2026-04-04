@@ -45,13 +45,15 @@
  *    ==========================================================================
  */
 
-$morandi-primary       : #6B8E9F;    // Dusty blue
-$morandi-secondary     : #8FA7B3;    // Muted blue-gray
-$morandi-accent       : #B5C7D3;    // Light blue-gray
-$morandi-light        : #E8EEF2;     // Very light blue-gray
-$morandi-dark         : #4A6670;     // Deep dusty blue
-$morandi-gradient-1   : #7A9CAD;    // Gradient start
-$morandi-gradient-2   : #9BB5C4;     // Gradient end
+$morandi-primary       : #5A7A8A;    // Dusty blue
+$morandi-secondary     : #6B8A9A;    // Muted blue-gray
+$morandi-accent       : #95B5C3;    // Light blue-gray
+$morandi-light        : #D8E8EE;     // Very light blue-gray
+$morandi-dark         : #3A5560;     // Deep dusty blue
+$morandi-gradient-1   : #5A7A8A;    // Gradient start
+$morandi-gradient-2   : #7A9AAA;     // Gradient end
+$morandi-red         : #A06060;     // Morandi red
+$morandi-red-dark    : #805050;     // Morandi red dark
 
 /*
  *    Paper Box Styles
@@ -145,6 +147,47 @@ h1:before, .anchor:before {
     width: 0;
     height: $scroll_offset;
     margin-top: -$scroll_offset;
+}
+
+/*
+ *    Intro Card (Research Interests)
+ *    ==========================================================================
+ */
+
+.intro-card {
+    position: relative;
+    padding: 1.25em 1.5em 1.25em 2em;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%);
+    border: 1px solid #e5edf0;
+    border-radius: 8px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    box-shadow: 0 2px 8px rgba(107, 142, 159, 0.08);
+
+    /* Left color strip */
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: linear-gradient(180deg, $morandi-primary 0%, $morandi-accent 100%);
+        border-radius: 8px 0 0 8px;
+    }
+}
+
+/*
+ *    Gradient Text (Morandi Blue to Red)
+ *    ==========================================================================
+ */
+
+.gradient-text {
+    background: linear-gradient(90deg, $morandi-dark 0%, $morandi-red-dark 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
 }
 
 /*
@@ -242,22 +285,59 @@ h1:before, .anchor:before {
 }
 
 /*
- *    Social Icons Color Enhancement (Morandi)
+ *    Social Icons Hover Effect (Morandi Red)
  *    ==========================================================================
  */
 
 .author__urls {
+    li {
+        position: relative;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        padding: 0.3em 0;
+    }
+
     li i {
-        color: $morandi-primary;
+        color: $morandi-dark;
+        transition: all 0.3s ease;
+        width: 24px;
+        text-align: center;
+        margin-right: 0.5em;
     }
 
     a {
-        transition: all 0.2s ease;
-        color: #5A6A7A;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        color: $morandi-dark;
+        text-decoration: none !important;
+        transition: all 0.3s ease;
+
+        /* Underline that appears from left to right */
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, $morandi-red, $morandi-red-dark);
+            transition: width 0.3s ease;
+        }
 
         &:hover {
-            color: $morandi-primary;
-            padding-left: 4px;
+            color: $morandi-red;
+            padding-left: 6px;
+            text-decoration: none !important;
+
+            i {
+                color: $morandi-red;
+            }
+
+            &::after {
+                width: 100%;
+            }
         }
     }
 }

@@ -27,7 +27,9 @@ I got my M.Eng. degree at [MePro](http://mepro.bjtu.edu.cn) in Beijing Jiaotong 
 
 
 
-My research interests cover a range of computer vision and deep learning. Currentl, my research is primarily concentrated on open-vocabulary dense perception, multimodal visual grounding and multimodal LLM.
+<div class="intro-card">
+Currently, my research is concentrated on <span class="gradient-text">open-vocabulary dense perception</span>, <span class="gradient-text">multimodal visual grounding</span> and <span class="gradient-text">multimodal LLM</span>.
+</div>
 <!-- including image & video low-level vision, e.g. super-resolution, denoising, low-light enhancement, etc. and semantic segmentation under various conditions, including weakly-supervised, self-supervised and zero-shot learning environments. -->
 <!--
 neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
