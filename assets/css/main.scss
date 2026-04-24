@@ -41,18 +41,18 @@
 @import "print";
 
 /*
- *    Morandi Blue Color System
+ *    Anthropic Orange Color System
  *    ==========================================================================
  */
 
-$morandi-primary       : #5A7A8A;    // Dusty blue
-$morandi-secondary     : #6B8A9A;    // Muted blue-gray
-$morandi-accent       : #95B5C3;    // Light blue-gray
-$morandi-light        : #D8E8EE;     // Very light blue-gray
-$morandi-dark         : #3A5560;     // Deep dusty blue
-$morandi-gradient-1   : #5A7A8A;    // Gradient start
-$morandi-gradient-2   : #7A9AAA;     // Gradient end
-$morandi-red         : #A06060;     // Morandi red
+$morandi-primary       : #d97757;    // Anthropic Orange
+$morandi-secondary     : #e6a086;    // Muted orange
+$morandi-accent       : #f0c3b3;    // Light orange
+$morandi-light        : #f9e6df;     // Very light orange
+$morandi-dark         : #a6543a;     // Deep orange
+$morandi-gradient-1   : #d97757;    // Gradient start
+$morandi-gradient-2   : #e6a086;     // Gradient end
+$morandi-red         : #A06060;     // Morandi red (kept for variety if needed, or change)
 $morandi-red-dark    : #805050;     // Morandi red dark
 
 /*
@@ -67,12 +67,12 @@ $morandi-red-dark    : #805050;     // Morandi red dark
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
-    background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%);
-    border: 1px solid #e5edf0;
+    background: linear-gradient(135deg, #ffffff 0%, #fffaf9 100%);
+    border: 1px solid rgba(217, 119, 87, 0.15);
     border-radius: 12px;
     padding: 1.5em;
     margin-bottom: 1.5em;
-    box-shadow: 0 2px 8px rgba(107, 142, 159, 0.08);
+    box-shadow: 0 2px 8px rgba(217, 119, 87, 0.08);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     .paper-box-image{
@@ -84,7 +84,7 @@ $morandi-red-dark    : #805050;     // Morandi red dark
 
         img {
             max-width: 350px;
-            box-shadow: 0 4px 12px rgba(74, 102, 112, 0.15);
+            box-shadow: 0 4px 12px rgba(217, 119, 87, 0.15);
             object-fit: cover;
             border-radius: 8px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -104,7 +104,7 @@ $morandi-red-dark    : #805050;     // Morandi red dark
         }
 
         p {
-            color: #6B7B8A;
+            color: #8c8577;
             font-size: 0.95em;
             line-height: 1.6;
             margin-bottom: 0.3em;
@@ -129,12 +129,12 @@ $morandi-red-dark    : #805050;     // Morandi red dark
 
     &:hover {
         transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(107, 142, 159, 0.12);
+        box-shadow: 0 8px 24px rgba(217, 119, 87, 0.12);
         border-color: $morandi-accent;
 
         .paper-box-image img {
             transform: scale(1.02);
-            box-shadow: 0 6px 16px rgba(74, 102, 112, 0.2);
+            box-shadow: 0 6px 16px rgba(217, 119, 87, 0.2);
         }
     }
 }
@@ -157,12 +157,12 @@ h1:before, .anchor:before {
 .intro-card {
     position: relative;
     padding: 1.25em 1.5em 1.25em 2em;
-    background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%);
-    border: 1px solid #e5edf0;
+    background: linear-gradient(135deg, #ffffff 0%, #fffcfb 100%);
+    border: 1px solid rgba(217, 119, 87, 0.15);
     border-radius: 8px;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
-    box-shadow: 0 2px 8px rgba(107, 142, 159, 0.08);
+    box-shadow: 0 2px 8px rgba(217, 119, 87, 0.08);
 
     /* Left color strip */
     &::before {
@@ -178,7 +178,7 @@ h1:before, .anchor:before {
 }
 
 /*
- *    Gradient Text (Morandi Blue to Red)
+ *    Gradient Text (Morandi Orange to Red)
  *    ==========================================================================
  */
 
@@ -201,10 +201,11 @@ h1:before, .anchor:before {
     top: 1em;
     left: 1em;
     color: #ffffff;
+    background-color: $morandi-primary;
     font-size: 0.75em;
     font-weight: 600;
     border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 6px rgba(217, 119, 87, 0.15);
     transition: all 0.3s ease;
     z-index: 10;
 }
@@ -368,7 +369,7 @@ h1:before, .anchor:before {
 
     &:hover {
         transform: scale(1.02);
-        box-shadow: 0 4px 12px rgba(107, 142, 159, 0.25);
+        box-shadow: 0 4px 12px rgba(217, 119, 87, 0.25);
         border-color: $morandi-accent;
     }
 }
