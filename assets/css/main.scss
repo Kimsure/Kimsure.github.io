@@ -262,16 +262,17 @@ h1:before, .anchor:before {
 
     li {
         position: relative;
-        padding: 0.4em 0 0.4em 1.5em;
+        padding: 0.2em 0 0.2em 1.5em;
+        margin-bottom: 0.15em;
         color: #5A6A7A;
-        font-size: 0.95em;
-        line-height: 1.6;
+        font-size: 1.02em;
+        line-height: 1.35;
 
         &::before {
             content: '';
             position: absolute;
             left: 0.4em;
-            top: 0.85em;
+            top: 0.72em;
             width: 6px;
             height: 6px;
             background: linear-gradient(135deg, $morandi-primary 0%, $morandi-accent 100%);
