@@ -365,6 +365,10 @@ h1:before, .anchor:before {
  */
 
 .author__avatar img {
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 3px solid $morandi-light;
 
