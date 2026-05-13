@@ -3,3 +3,6 @@ push.sh
 .DS_Store
 test.json
 AGENTS.md
+.agents/
+.claude/
+ref_xjx.png
