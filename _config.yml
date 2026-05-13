@@ -24,7 +24,8 @@ author:
   name             : "Shuo Jin"
   avatar           : "images/shuojin.jpeg"
   bio              : "University of Liverpool"
-  location         : "China"
+  location         : "XJTLU"
+  location_url     : "https://www.xjtlu.edu.cn/"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
