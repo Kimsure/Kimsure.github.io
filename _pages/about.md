@@ -36,13 +36,27 @@ neural machine translation and computer vision. I have published more than 100 p
 -->
 
 # 🔥 News
-- *2026.03*: &nbsp;🎉🎉 One Regular paper and One Finding paper are accepted by CVPR26.
-- *2025.08*: &nbsp;🎉🎉 Our paper SFP has been selected as ICCV25 **highligh** paper! Many thanks to all co-authors.
+- *2026.05*: &nbsp;🎉🎉 One Regular paper is accepted by ICML 2026.
+- *2026.03*: &nbsp;🎉🎉 One Regular paper and One Finding paper are accepted by CVPR 2026.
+- *2025.08*: &nbsp;🎉🎉 Our paper SFP has been selected as ICCV 2025 **highligh** paper! Many thanks to all co-authors.
 - *2025.06*: &nbsp;🎉🎉 One paper is accepted by ICCV 2025.
 - *2023.10*: &nbsp;🎉🎉 Two papers are accepted by ACM MM 2023.
 - *2023.04*: &nbsp;🎉🎉 One paper is accepted by T-CSVT.
 
 # 📝 Publications
+
+<div class='paper-box'>
+<div class="badge" style="background: linear-gradient(135deg, #c08080, #a07070);">ICML 2026</div>
+<div class='paper-box-image'><div><img src='images/VIP.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+VIP: Visual-guided Prompt Evolution for Efficient Dense Vision-Language Inference (*Equal Contribution)
+
+Hao Zhu\*, **Shuo Jin\***, Wenbin Liao, Jiayu Xiao, Yan Zhu, Siyue Yu, Feng Dai
+
+[![project](https://img.shields.io/badge/Project-VIP-green)](https://github.com/Kimsure/VIP)    [![Paper](https://img.shields.io/badge/Paper-ICML-b31b1b)](../images/files/VIP_ICML2026.pdf) [![Poster](https://img.shields.io/badge/Poster-VIP-yellow)](#LICENSE--citation) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
+</div>
+</div>
 
 <div class='paper-box'>
 <div class="badge" style="background: linear-gradient(135deg, #c08080, #a07070);">CVPR 2026</div>
