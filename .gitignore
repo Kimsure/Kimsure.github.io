@@ -6,3 +6,8 @@ AGENTS.md
 .agents/
 .claude/
 ref_xjx.png
+Gemfile
+Gemfile.lock
+.bundle/
+bundle/
+vendor/

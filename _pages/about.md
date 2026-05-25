@@ -54,7 +54,7 @@ VIP: Visual-guided Prompt Evolution for Efficient Dense Vision-Language Inferenc
 
 Hao Zhu\*, **Shuo Jin\***, Wenbin Liao, Jiayu Xiao, Yan Zhu, Siyue Yu, Feng Dai
 
-[![project](https://img.shields.io/badge/Project-VIP-green)](https://github.com/Kimsure/VIP)    [![Paper](https://img.shields.io/badge/Paper-ICML-b31b1b)](https://arxiv.org/abs/2605.12325) [![Poster](https://img.shields.io/badge/Poster-VIP-yellow)](#LICENSE--citation) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
+[![project](https://img.shields.io/badge/Project-VIP-green)](https://github.com/Kimsure/VIP)    [![Paper](https://img.shields.io/badge/Paper-ICML-b31b1b)](https://arxiv.org/abs/2605.12325) [![Poster](https://img.shields.io/badge/Poster-VIP-yellow)](../images/poster/poster_icml26_VIP.pdf) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
 </div>
 </div>
 
@@ -67,7 +67,7 @@ TF-SSD: A Strong Pipeline via Synergic Mask Filter for Training-free Co-salient 
 
 Zhijin He\*, **Shuo Jin\***, Siyue Yu, Shuwei Wu, Bingfeng Zhang, Li Yu, Jimin Xiao
 
-[![project](https://img.shields.io/badge/Project-TFSSD-green)](https://github.com/hzz-yy/TF-SSD)    [![arXiv](https://img.shields.io/badge/Paper-CVPR-b31b1b)](https://arxiv.org/abs/2604.00549) [![Poster](https://img.shields.io/badge/Poster-TFSSD-yellow)](../images/files/CVPR26_HZJ_arxiv.pdf) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
+[![project](https://img.shields.io/badge/Project-TFSSD-green)](https://github.com/hzz-yy/TF-SSD)    [![arXiv](https://img.shields.io/badge/Paper-CVPR-b31b1b)](https://arxiv.org/abs/2604.00549) [![Poster](https://img.shields.io/badge/Poster-TFSSD-yellow)](../images/poster/poster_cvpr26_tfssd.pdf) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
 </div>
 </div>
 
@@ -78,7 +78,7 @@ TALENT: Target-aware Efficient Tuning for Referring Image Segmentation
 
 **Shuo Jin**, Siyue Yu, Bingfeng Zhang, Chao Yao, Meiqin Liu, Jimin Xiao
 
-[![project](https://img.shields.io/badge/Project-TALENT-green)](https://github.com/Kimsure/TALENT)    [![arXiv](https://img.shields.io/badge/Paper-CVPR-b31b1b)](https://arxiv.org/abs/2604.00609) [![Poster](https://img.shields.io/badge/Poster-TALENT-yellow)](../images/files/CVPR26_TALENT_CR.pdf) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
+[![project](https://img.shields.io/badge/Project-TALENT-green)](https://github.com/Kimsure/TALENT)    [![arXiv](https://img.shields.io/badge/Paper-CVPR-b31b1b)](https://arxiv.org/abs/2604.00609) [![Poster](https://img.shields.io/badge/Poster-TALENT-yellow)](../images/poster/poster_cvpr26_TALENT.pdf) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
 </div>
 </div>
 
@@ -90,7 +90,7 @@ Feature Purification Matters: Suppressing Outlier Propagation for Training-Free 
 
 **Shuo Jin**, Siyue Yu, Bingfeng Zhang, Mingjie Sun, Yi Dong, Jimin Xiao
 
-[![project](https://img.shields.io/badge/Project-SFP-green)](https://github.com/Kimsure/SFP)    [![arXiv](https://img.shields.io/badge/Paper-ICCV-b31b1b)](https://openaccess.thecvf.com/content/ICCV2025/papers/Jin_Feature_Purification_Matters_Suppressing_Outlier_Propagation_for_Training-Free_Open-Vocabulary_Semantic_ICCV_2025_paper.pdf) [![Poster](https://img.shields.io/badge/Poster-SFP-yellow)](../images/poster/poster_iccv25_09317.pdf) <a href="#LICENSE--citation"><img alt="License: MIT" src="https://img.shields.io/badge/LICENSE-MIT-blue.svg"/></a>
+[![project](https://img.shields.io/badge/Project-SFP-green)](https://github.com/Kimsure/SFP)    [![arXiv](https://img.shields.io/badge/Paper-ICCV-b31b1b)](https://openaccess.thecvf.com/content/ICCV2025/papers/Jin_Feature_Purification_Matters_Suppressing_Outlier_Propagation_for_Training-Free_Open-Vocabulary_Semantic_ICCV_2025_paper.pdf) [![Poster](https://img.shields.io/badge/Poster-SFP-yellow)](../images/poster/poster_iccv25_SFP.pdf) <a href="#LICENSE--citation"><img alt="License: MIT" src="https://img.shields.io/badge/LICENSE-MIT-blue.svg"/></a>
 </div>
 </div>
 
