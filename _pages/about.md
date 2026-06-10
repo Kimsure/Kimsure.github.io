@@ -18,17 +18,17 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-I'm a 2nd-year Ph.D student at [MMT lab](https://jiminxiao.github.io), University of Liverpool, co-advised by Dr. Siyue Yu and Prof. Jimin Xiao. I'm also fortunate to work closely with Dr. [Mingjie Sun](https://scst.suda.edu.cn/0f/92/c11250a528274/page.htm) from [Soochow University](https://www.suda.edu.cn) and [Dr. Bingfeng Zhang](https://zbf1991.github.io/) from [China University of Petroleum (East China)](https://www.upc.edu.cn).
+I'm a 2nd-year Ph.D student at [MMT lab](https://jiminxiao.github.io), University of Liverpool, co-advised by Dr. Siyue Yu, Prof. Jimin Xiao and Dr. Yi Dong. I'm also fortunate to work closely with Dr. [Mingjie Sun](https://scst.suda.edu.cn/0f/92/c11250a528274/page.htm) from [Soochow University](https://www.suda.edu.cn) and [Dr. Bingfeng Zhang](https://zbf1991.github.io/) from [China University of Petroleum (East China)](https://www.upc.edu.cn).
 <!-- Dr. Yi Dong and Prof. Xiaowei Huang, in [Trustworthy Autonomous Cyber-Physical Systems (TACPS) Lab](https://cgi.csc.liv.ac.uk/~acps/home/). -->
 
 Prior to that, I worked as a camera engineer for [vivo Mobile Communication Ltd](https://www.vivo.com), focusing on Auto-Foucs & Image-Stablization.
 
-I got my M.Eng. degree at [MePro](http://mepro.bjtu.edu.cn) in Beijing Jiaotong University led by [Yao Zhao](https://faculty.bjtu.edu.cn/5900/) (**IEEE Fellow**), advised by Prof. Meiqin Liu and Chao Yao.
+I graduated from [MePro](http://mepro.bjtu.edu.cn) led by [Yao Zhao](https://faculty.bjtu.edu.cn/5900/) (**IEEE Fellow**), at Beijing Jiaotong University, advised by Prof. [Meiqin Liu](https://faculty.bjtu.edu.cn/8002/) and Prof. [Chao Yao](https://yaochao1986.github.io/).
 
 
 
 <div class="intro-card">
-Currently, my research is concentrated on <span class="gradient-text">open-vocabulary dense perception</span>, <span class="gradient-text">multimodal visual grounding</span> and <span class="gradient-text">multimodal LLM</span>.
+Currently, my research is concentrated on <span class="gradient-text">open-vocabulary dense perception</span>, <span class="gradient-text">multimodal visual grounding</span>, <span class="gradient-text">concept/reasoning/text-guided segmentation</span> and <span class="gradient-text">MLLM</span>.
 </div>
 <!-- including image & video low-level vision, e.g. super-resolution, denoising, low-light enhancement, etc. and semantic segmentation under various conditions, including weakly-supervised, self-supervised and zero-shot learning environments. -->
 <!--
