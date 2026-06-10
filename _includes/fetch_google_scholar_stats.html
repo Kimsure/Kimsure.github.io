@@ -7,13 +7,24 @@
         {% endif %}
         $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
             var totalCitation = data['citedby']
-            document.getElementById('total_cit').innerHTML = totalCitation;
+            var totalCitationEle = document.getElementById('total_cit')
+            if (totalCitationEle && typeof totalCitation !== 'undefined') {
+                totalCitationEle.innerHTML = totalCitation;
+            }
+
             var citationEles = document.getElementsByClassName('show_paper_citations')
             Array.prototype.forEach.call(citationEles, element => {
                 var paperId = element.getAttribute('data')
-                var numCitations = data['publications'][paperId]['num_citations']
+                var publication = data['publications'] && data['publications'][paperId]
+                if (!publication) {
+                    return
+                }
+
+                var numCitations = publication['num_citations']
                 element.innerHTML = '| Citations: ' + numCitations;
             });
+        }).fail(function (_jqxhr, textStatus, error) {
+            console.warn('Failed to load Google Scholar stats:', error || textStatus)
         });
     })
 </script>

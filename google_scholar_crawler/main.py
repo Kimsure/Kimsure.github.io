@@ -1,80 +1,118 @@
-from scholarly import scholarly
 import json
-from datetime import datetime
 import os
-import time
 import random
+import time
+from datetime import datetime, timezone
 
-def fetch_author_data_with_retry(author_id, max_retries=3):
-    """带有重试机制的作者数据获取"""
-    for attempt in range(max_retries):
-        try:
-            # 添加随机延迟避免被检测
-            delay = random.uniform(2, 5)
-            print(f"Attempt {attempt + 1}/{max_retries}, waiting {delay:.1f}s...")
-            time.sleep(delay)
+from scholarly import ProxyGenerator, scholarly
 
-            author = scholarly.search_author_id(author_id)
-            scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
 
-            print(f"Successfully fetched data for {author.get('name', 'Unknown')}")
-            return author
+MAX_RETRIES = int(os.environ.get("GOOGLE_SCHOLAR_MAX_RETRIES", "4"))
+PRE_ATTEMPT_DELAY_RANGE = (2.0, 5.0)
+BACKOFF_DELAY_RANGE = (10.0, 20.0)
+FETCH_STRATEGIES = ("direct", "free-proxy")
 
-        except Exception as e:
-            print(f"Attempt {attempt + 1} failed: {str(e)}")
-            if attempt < max_retries - 1:
-                # 失败后等待更长时间
-                backoff_delay = random.uniform(10, 20)
-                print(f"Retrying in {backoff_delay:.1f}s...")
-                time.sleep(backoff_delay)
 
-    raise Exception(f"Failed to fetch author data after {max_retries} attempts")
+def configure_scholarly(strategy):
+    scholarly.set_timeout(30)
+    scholarly.set_retries(5)
+
+    if strategy == "direct":
+        scholarly.use_proxy(None)
+        return
+
+    if strategy == "free-proxy":
+        proxy_generator = ProxyGenerator()
+        proxy_generator.FreeProxies()
+        scholarly.use_proxy(proxy_generator)
+        return
+
+    raise ValueError(f"Unknown strategy: {strategy}")
+
+
+def fetch_author_data_once(author_id, strategy):
+    configure_scholarly(strategy)
+    author = scholarly.search_author_id(author_id)
+    if not author:
+        raise RuntimeError(
+            "Google Scholar returned an empty author payload. "
+            "This usually means the request was rate-limited or blocked."
+        )
+
+    scholarly.fill(author, sections=["basics", "indices", "counts", "publications"])
+    return author
+
+
+def fetch_author_data_with_retry(author_id, max_retries=MAX_RETRIES):
+    last_error = None
+
+    for attempt in range(1, max_retries + 1):
+        for strategy in FETCH_STRATEGIES:
+            try:
+                delay = random.uniform(*PRE_ATTEMPT_DELAY_RANGE)
+                print(
+                    f"Attempt {attempt}/{max_retries} with strategy '{strategy}', "
+                    f"waiting {delay:.1f}s..."
+                )
+                time.sleep(delay)
+
+                author = fetch_author_data_once(author_id, strategy)
+                print(f"Successfully fetched data for {author.get('name', 'Unknown')}")
+                return author
+            except Exception as error:
+                last_error = error
+                print(
+                    f"Attempt {attempt}/{max_retries} with strategy '{strategy}' failed: {error}"
+                )
+
+        if attempt < max_retries:
+            backoff_delay = random.uniform(*BACKOFF_DELAY_RANGE)
+            print(f"Retrying after {backoff_delay:.1f}s...")
+            time.sleep(backoff_delay)
+
+    raise RuntimeError(
+        f"Failed to fetch author data after {max_retries} attempts"
+    ) from last_error
+
 
 def main():
-    # 验证环境变量
-    author_id = os.environ.get('GOOGLE_SCHOLAR_ID')
+    author_id = os.environ.get("GOOGLE_SCHOLAR_ID")
     if not author_id:
         raise ValueError("GOOGLE_SCHOLAR_ID environment variable not set")
 
     print(f"Fetching data for Google Scholar ID: {author_id}")
 
     try:
-        # 获取作者数据
         author = fetch_author_data_with_retry(author_id)
-
-        # 更新时间戳
-        author['updated'] = str(datetime.now())
-
-        # 重组 publications 为字典格式
-        author['publications'] = {v['author_pub_id']: v for v in author.get('publications', [])}
+        author["updated"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        author["publications"] = {
+            publication["author_pub_id"]: publication
+            for publication in author.get("publications", [])
+        }
 
         print(f"Author: {author.get('name', 'Unknown')}")
         print(f"Total Citations: {author.get('citedby', 'N/A')}")
         print(f"Publications: {len(author.get('publications', {}))}")
 
-        # 创建结果目录
-        os.makedirs('results', exist_ok=True)
+        os.makedirs("results", exist_ok=True)
 
-        # 保存完整数据
-        with open('results/gs_data.json', 'w', encoding='utf-8') as outfile:
+        with open("results/gs_data.json", "w", encoding="utf-8") as outfile:
             json.dump(author, outfile, ensure_ascii=False, indent=2)
         print("Saved gs_data.json")
 
-        # 保存 Shields.io 格式数据
         shieldio_data = {
             "schemaVersion": 1,
             "label": "citations",
             "message": f"{author.get('citedby', '0')}",
         }
-        with open('results/gs_data_shieldsio.json', 'w', encoding='utf-8') as outfile:
+        with open("results/gs_data_shieldsio.json", "w", encoding="utf-8") as outfile:
             json.dump(shieldio_data, outfile, ensure_ascii=False)
         print("Saved gs_data_shieldsio.json")
-
-        print("✓ Data fetch completed successfully")
-
-    except Exception as e:
-        print(f"✗ Error: {str(e)}")
+        print("Data fetch completed successfully")
+    except Exception as error:
+        print(f"Error: {error}")
         raise
+
 
 if __name__ == "__main__":
     main()
