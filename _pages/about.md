@@ -54,7 +54,7 @@ VIP: Visual-guided Prompt Evolution for Efficient Dense Vision-Language Inferenc
 
 Hao Zhu\*, **Shuo Jin\***, Wenbin Liao, Jiayu Xiao, Yan Zhu, Siyue Yu, Feng Dai
 
-[![project](https://img.shields.io/badge/Project-VIP-green)](https://github.com/Kimsure/VIP)    [![Paper](https://img.shields.io/badge/Paper-ICML-b31b1b)](https://arxiv.org/abs/2605.12325) [![Poster](https://img.shields.io/badge/Poster-VIP-yellow)](../images/poster/poster_icml26_VIP.pdf) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
+[![project](https://img.shields.io/badge/Project-VIP-green)](https://kimsure.github.io/VIP)    [![Paper](https://img.shields.io/badge/Paper-ICML-b31b1b)](https://arxiv.org/abs/2605.12325) [![Poster](https://img.shields.io/badge/Poster-VIP-yellow)](../images/poster/poster_icml26_VIP.pdf) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
 </div>
 </div>
 
