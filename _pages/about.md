@@ -28,12 +28,7 @@ I graduated from [MePro](http://mepro.bjtu.edu.cn) led by [Yao Zhao](https://fac
 
 
 <div class="intro-card">
-Currently, my research is concentrated on <span class="gradient-text">open-vocabulary dense perception</span>, <span class="gradient-text">multimodal visual grounding</span>, <span class="gradient-text">concept/reasoning/text-guided segmentation</span> and <span class="gradient-text">MLLM</span>, with
-<a class="scholar-citation-badge" href="{{ site.author.googlescholar }}" aria-label="Google Scholar citations">
-  <span class="scholar-citation-badge__icon"><i class="ai ai-google-scholar" aria-hidden="true"></i></span>
-  <span class="scholar-citation-badge__label">citations</span>
-  <span class="scholar-citation-badge__count" id="total_cit">...</span>
-</a>.
+Currently, my research is concentrated on <span class="gradient-text">open-vocabulary dense perception</span>, <span class="gradient-text">multimodal visual grounding</span>, <span class="gradient-text">concept/reasoning/text-guided segmentation</span> and <span class="gradient-text">MLLM</span>, with <a href="{{ site.author.googlescholar }}"><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations" alt="Google Scholar citations"></a>.
 </div>
 <!-- including image & video low-level vision, e.g. super-resolution, denoising, low-light enhancement, etc. and semantic segmentation under various conditions, including weakly-supervised, self-supervised and zero-shot learning environments. -->
 <!--

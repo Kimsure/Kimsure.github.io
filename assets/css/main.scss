@@ -177,61 +177,6 @@ h1:before, .anchor:before {
     }
 }
 
-.scholar-citation-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0;
-    margin-left: 0.35em;
-    color: #2d3748;
-    text-decoration: none;
-    vertical-align: baseline;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 1px 3px rgba(37, 99, 235, 0.14);
-    border: 1px solid rgba(96, 165, 250, 0.28);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-    &:hover {
-        transform: translateY(-1px);
-        box-shadow: 0 4px 10px rgba(37, 99, 235, 0.18);
-        text-decoration: none;
-    }
-}
-
-.scholar-citation-badge__icon,
-.scholar-citation-badge__label,
-.scholar-citation-badge__count {
-    display: inline-flex;
-    align-items: center;
-    min-height: 2em;
-}
-
-.scholar-citation-badge__icon,
-.scholar-citation-badge__label {
-    background: #f3f4f6;
-}
-
-.scholar-citation-badge__icon {
-    padding: 0 0.45em 0 0.6em;
-    color: #4285f4;
-    font-size: 1.05em;
-}
-
-.scholar-citation-badge__label {
-    padding: 0 0.7em 0 0.1em;
-    font-size: 0.95em;
-    font-weight: 500;
-    letter-spacing: 0.01em;
-}
-
-.scholar-citation-badge__count {
-    padding: 0 0.7em;
-    background: linear-gradient(180deg, #b9d8fb 0%, #9fc7f5 100%);
-    color: #1f2937;
-    font-weight: 700;
-    font-variant-numeric: tabular-nums;
-}
-
 /*
  *    Gradient Text (Morandi Orange to Red)
  *    ==========================================================================
