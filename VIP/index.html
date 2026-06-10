@@ -7,42 +7,90 @@
   <title>VIP: Visual-guided Prompt Evolution for Efficient Dense Vision-Language Inference</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-  <main class="page-shell">
+  <div class="container">
     <section class="hero" aria-label="VIP hero">
       <div class="hero-top">
         <div class="hero-inner">
           <div class="hero-copy">
-            <p class="eyebrow">ICML 2026</p>
+            <p class="eyebrow">ICML 2026 Regular Paper</p>
             <h1 class="title">
-              <span class="title-line">VIP: Visual-guided Prompt Evolution</span>
-              <span class="title-line">for Efficient Dense Vision-Language Inference</span>
+              <span class="title-line"><span class="title-mark">VIP</span><span class="title-punct"> : </span> Visual-guided Prompt Evolution for</span>
+              <span class="title-line">Efficient Dense Vision-Language Inference</span>
             </h1>
 
             <div class="authors">
               <span class="author-row">
-                <span class="author">Hao Zhu*</span>,
-                <span class="author">Shuo Jin*</span>,
-                <span class="author">Wenbin Liao</span>,
-                <span class="author">Jiayu Xiao</span>,
-                <span class="author">Yan Zhu</span>,
-                <span class="author">Siyue Yu</span>,
-                <span class="author">Feng Dai</span>
+                <span class="author">Hao Zhu<sup>*1,2</sup></span>
+                <span class="author">Shuo Jin<sup>*3,4</sup></span>
+                <span class="author">Wenbin Liao<sup>1,2</sup></span>
+                <span class="author">Jiayu Xiao<sup>1,2</sup></span>
+                <span class="author">Yan Zhu<sup>2</sup></span>
+                <span class="author">Siyue Yu<sup>3</sup></span>
+                <span class="author">Feng Dai<sup>1</sup></span>
               </span>
               <span class="affiliations">
                 <span class="affiliation">* Equal contribution</span>
+                <br>
+                <span class="affiliation"><sup>1</sup> Institute of Computing Technology, Chinese Academy of Sciences, Beijing, China</span>
+                <span class="affiliation"><sup>2</sup> University of Chinese Academy of Sciences, Beijing, China</span>
+                <span class="affiliation"><sup>3</sup> XJTLU</span>
+                <span class="affiliation"><sup>4</sup> University of Liverpool</span>
+                <br>
               </span>
             </div>
 
             <div class="buttons" aria-label="Project links">
-              <a class="btn" href="https://arxiv.org/abs/2605.12325" target="_blank" rel="noopener noreferrer">Paper</a>
-              <a class="btn btn-primary" href="https://github.com/Kimsure/VIP" target="_blank" rel="noopener noreferrer">Code</a>
-              <a class="btn" href="../images/poster/poster_icml26_VIP.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
-              <a class="btn" href="#abstract">Abstract</a>
-              <a class="btn" href="#citation">Citation</a>
+              <a class="btn" href="https://arxiv.org/abs/2605.12325" target="_blank" rel="noopener noreferrer">
+                <span class="btn-copy">
+                  <span class="btn-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M6 3h9l4 4v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+                      <path d="M15 3v5h5"/>
+                    </svg>
+                  </span>
+                  <span>Paper</span>
+                </span>
+              </a>
+              <a class="btn" href="https://github.com/Kimsure/VIP" target="_blank" rel="noopener noreferrer">
+                <span class="btn-copy">
+                  <span class="btn-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                  </span>
+                  <span>Code</span>
+                </span>
+              </a>
+              <a class="btn" href="../images/poster/poster_icml26_VIP.pdf" target="_blank" rel="noopener noreferrer">
+                <span class="btn-copy">
+                  <span class="btn-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                      <path d="M12 2a1 1 0 0 1 .707.293l8 8A1 1 0 0 1 21 11v9a2 2 0 0 1-2 2h-4a1 1 0 0 1-1-1v-5h-4v5a1 1 0 0 1-1 1H5a2 2 0 0 1-2-2v-9a1 1 0 0 1 .293-.707l8-8A1 1 0 0 1 12 2Zm0 2.414L5 11.414V20h3v-5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v5h3v-8.586l-7-7Z"/>
+                    </svg>
+                  </span>
+                  <span>Poster</span>
+                </span>
+              </a>
+              <a class="btn" href="https://icml.cc/virtual/2026/poster/65184" target="_blank" rel="noopener noreferrer">
+                <span class="btn-copy">
+                  <span class="btn-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M3 5h18"/>
+                      <path d="M8 3v4"/>
+                      <path d="M16 3v4"/>
+                      <rect x="3" y="7" width="18" height="14" rx="2" ry="2"/>
+                      <path d="M8 11h8"/>
+                      <path d="M8 15h5"/>
+                    </svg>
+                  </span>
+                  <span>Conference</span>
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -51,15 +99,14 @@
       <div class="hero-media section-narrow">
         <img src="../images/VIP.png" class="teaser-image" alt="VIP teaser image">
         <p class="caption">
-          <strong>Figure 1.</strong> Repository preview image for VIP. Dedicated method and benchmark figures can be swapped in here later
-          without changing the page structure.
+          <strong>Figure 1.</strong> Overview comparison of our<span class="title-mark">VIP</span> and CLIP-based pipeline.
         </p>
       </div>
     </section>
 
-    <section id="abstract" class="content section-narrow">
+    <section id="abstract">
       <h2 class="subtitle">Abstract</h2>
-      <div class="abstract-card">
+      <div class="abstract-text">
         <p>
           Training-free open-vocabulary semantic segmentation still struggles to stay both efficient and generalizable, especially when
           CLIP-style models introduce strong spatial bias. VIP moves beyond the CLIP-based route and instead builds on the spatially-aware
@@ -71,111 +118,82 @@
       </div>
     </section>
 
-    <section id="method" class="content section-narrow">
+    <section id="method">
       <h2 class="subtitle">Method Overview</h2>
-      <p class="lead">
+      <p class="content-block">
         VIP is designed as an efficient training-free dense vision-language inference pipeline that improves text-query quality before
-        final dense matching.
+        final dense matching. VIP evolves prompts with visual guidance. It expands aliases, distills useful semantic cues from image evidence, and improves
+          query expressiveness before dense cross-modal interaction. Saliency-aware aggregation makes the mined semantic cues more robust, which helps recover fine-grained object perception while
+          keeping inference overhead low.
       </p>
 
-      <div class="panel-grid">
-        <article class="panel">
-          <h3>Problem</h3>
-          <p>CLIP-based training-free dense prediction methods suffer from deep spatial bias, while even stronger spatial backbones like
-          dino.txt can still break down when the text side is semantically ambiguous.</p>
-        </article>
-        <article class="panel">
-          <h3>Key Idea</h3>
-          <p>VIP evolves prompts with visual guidance. It expands aliases, distills useful semantic cues from image evidence, and improves
-          query expressiveness before dense cross-modal interaction.</p>
-        </article>
-        <article class="panel">
-          <h3>Why It Works</h3>
-          <p>Saliency-aware aggregation makes the mined semantic cues more robust, which helps recover fine-grained object perception while
-          keeping inference overhead low.</p>
-        </article>
+      <div class="image-frame">
+        <img src="./assets/VIP_method.png" class="results-image" alt="VIP overview">
+        <p class="caption">
+          <strong>Figure 2.</strong> Framework overview of<span class="title-mark">VIP</span> . It comprises three key modules: semantic expansion, alias distillation, and activation aggregation, to refine the semantic expressiveness of text queries.
+        </p>
       </div>
     </section>
 
-    <section id="highlights" class="content section-narrow">
+    <section id="highlights">
       <h2 class="subtitle">Highlights</h2>
-      <div class="highlight-grid">
-        <article class="highlight-card">
-          <span class="highlight-kicker">01</span>
-          <h3>Prompt Evolution for Dense Prediction</h3>
+      <div class="content-grid">
+        <article class="content-card">
+          <h3 class="subsection-title">Prompt Evolution for Dense Prediction</h3>
           <p>VIP targets the semantic mismatch between text queries and dense visual evidence instead of only changing the vision backbone.</p>
         </article>
-        <article class="highlight-card">
-          <span class="highlight-kicker">02</span>
-          <h3>Consistent Accuracy Gains</h3>
-          <p>According to the paper abstract, VIP improves average mIoU by 1.4% to 8.4% over top-leading methods.</p>
+        <article class="content-card">
+          <h3 class="subsection-title">Consistent Accuracy Gains</h3>
+          <p>According to comprehensive experiments on different benchmarks, VIP improves average mIoU by 1.4% to 8.4% over top-leading methods.</p>
         </article>
-        <article class="highlight-card">
-          <span class="highlight-kicker">03</span>
-          <h3>Low Extra Cost</h3>
+        <article class="content-card">
+          <h3 class="subsection-title">Low Extra Cost and Broad Generalization </h3>
           <p>The reported gains come with only marginal additional inference time and memory overhead, which is important for practical use.</p>
         </article>
       </div>
     </section>
 
-    <section id="results" class="content section-narrow">
-      <h2 class="subtitle">Visual Summary</h2>
-      <div class="result-frame">
-        <img src="../images/VIP.png" class="results-image" alt="VIP result illustration">
+
+    <section id="Results">
+      <h2 class="subtitle">Results</h2>
+      <div class="results-layout">
+        <figure class="result-card result-card-wide">
+          <img src="./assets/VIP_result1.png" class="result-visual result-visual-wide" alt="VIP benchmark comparison table">
+          <p class="caption">
+            <strong>Figure 3.</strong> Comparison with the state-of-the-art training-free OVSS methods on natural images and urban scenes. Best results are in bold, and second best are underlined. The inference time and memory footprint of the model are evaluated on the Pascal VOC dataset.
+          </p>
+        </figure>
+      </div>
+    </section>
+
+    <section id="diagnostic-analysis">
+      <h2 class="subtitle">Diagnostic Analysis</h2>
+      <div class="image-frame">
+        <img src="./assets/VIP_ablation1.png" class="results-image diagnostic-image" alt="VIP diagnostic analysis">
         <p class="caption">
-          <strong>Figure 2.</strong> This section currently reuses the repository preview image because the current repo snapshot does not
-          include standalone method and benchmark figure assets for the project page.
+          <strong>Figure 4.</strong> Quantitative similarity analysis between the refined and the original features. ‘C’ and ‘D’ denote the CLIP and dino.txt models, respectively, while the ‘-1’ and ‘-2’ denote the refined layers. ‘-orig’ denotes the original feature. (a) Intra-class image feature similarity, which measures the patch-level similarity between the refined and the original image features. ‘-orig’ means the self-similarity, e.g., = 1. (b) Image-text similarity, which measures the image-text similarity among the refined and the original image features to the same text embeddings. (c) CLIP-based solution image-text similarity distribution. (d) dino.txt solution image-text similarity distribution. Both (c) and (d) represent results evaluated on the Pascal VOC.
         </p>
       </div>
+      <p>
+        We consider two comparative settings for both models: ① modulating the self-attention mechanism exclusively in the final layer of the image encoders, and ② extending the modulation to the penultimate layer to further enhance spatial awareness. It is evident that CLIP’s cross-modal alignment suffers a collapse following extended modulation. This reveals that the spatial bias in CLIP is inextricably entangled with its cross-modal alignment capability. Hence, attempts to address the former often come at the expense of the latter. Conversely, benefiting from the inherent spatial awareness priors of DINOv3, dino.txt fundamentally mitigates this bottleneck.
+      </p>
     </section>
 
-    <section id="poster" class="content section-narrow">
-      <h2 class="subtitle">Poster</h2>
-      <div class="poster-frame">
-        <object data="../images/poster/poster_icml26_VIP.pdf" type="application/pdf" class="poster-object">
-          <p>
-            Poster preview is unavailable in this browser.
-            <a href="../images/poster/poster_icml26_VIP.pdf" target="_blank" rel="noopener noreferrer">Open the PDF directly</a>.
-          </p>
-        </object>
-      </div>
-    </section>
+    
 
-    <section id="resources" class="content section-narrow">
-      <h2 class="subtitle">Resources</h2>
-      <div class="resource-list">
-        <a class="resource-item" href="https://arxiv.org/abs/2605.12325" target="_blank" rel="noopener noreferrer">
-          <span class="resource-label">Paper</span>
-          <span class="resource-meta">arXiv: 2605.12325</span>
-        </a>
-        <a class="resource-item" href="https://github.com/Kimsure/VIP" target="_blank" rel="noopener noreferrer">
-          <span class="resource-label">GitHub Repository</span>
-          <span class="resource-meta">github.com/Kimsure/VIP</span>
-        </a>
-        <a class="resource-item" href="../images/poster/poster_icml26_VIP.pdf" target="_blank" rel="noopener noreferrer">
-          <span class="resource-label">Poster PDF</span>
-          <span class="resource-meta">Current local asset</span>
-        </a>
-        <a class="resource-item" href="#citation">
-          <span class="resource-label">BibTeX</span>
-          <span class="resource-meta">Scroll to citation block</span>
-        </a>
-      </div>
-    </section>
-
-    <section id="citation" class="content section-narrow">
+    <section id="citation">
       <h2 class="subtitle">Citation</h2>
       <div class="bibtex-box">
         <button class="copy-btn" type="button" data-copy-target="bibtex-entry">Copy</button>
         <pre><code id="bibtex-entry">@article{zhu2026vip,
-  title     = {VIP: Visual-guided Prompt Evolution for Efficient Dense Vision-Language Inference},
-  author    = {Hao Zhu and Shuo Jin and Wenbin Liao and Jiayu Xiao and Yan Zhu and Siyue Yu and Feng Dai},
-  journal   = {arXiv preprint arXiv:2605.12325},
-  year      = {2026}
-}</code></pre>
+          title     = {VIP: Visual-guided Prompt Evolution for Efficient Dense Vision-Language Inference},
+          author    = {Hao Zhu and Shuo Jin and Wenbin Liao and Jiayu Xiao and Yan Zhu and Siyue Yu and Feng Dai},
+          journal   = {arXiv preprint arXiv:2605.12325},
+          year      = {2026}
+        }</code></pre>
       </div>
     </section>
-  </main>
+  </div>
 
   <script src="./assets/main.js"></script>
 </body>
