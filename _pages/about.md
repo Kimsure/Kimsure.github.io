@@ -28,7 +28,7 @@ I graduated from [MePro](http://mepro.bjtu.edu.cn) led by [Yao Zhao](https://fac
 
 
 <div class="intro-card">
-Currently, my research is concentrated on <span class="gradient-text">open-vocabulary dense perception</span>, <span class="gradient-text">multimodal visual grounding</span>, <span class="gradient-text">concept/reasoning/text-guided segmentation</span> and <span class="gradient-text">MLLM</span>.
+Currently, my research is concentrated on <span class="gradient-text">open-vocabulary dense perception</span>, <span class="gradient-text">multimodal visual grounding</span>, <span class="gradient-text">concept/reasoning/text-guided segmentation</span> and <span class="gradient-text">MLLM</span>, with <a href="{{ site.author.googlescholar }}">Google Scholar citations <strong><span id="total_cit">...</span></strong></a>.
 </div>
 <!-- including image & video low-level vision, e.g. super-resolution, denoising, low-light enhancement, etc. and semantic segmentation under various conditions, including weakly-supervised, self-supervised and zero-shot learning environments. -->
 <!--
