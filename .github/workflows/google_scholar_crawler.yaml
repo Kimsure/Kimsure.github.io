@@ -29,11 +29,12 @@ jobs:
       - name: Fetch citation data
         env:
           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
-        run: python google_scholar_crawler/main.py
+        working-directory: google_scholar_crawler
+        run: python main.py
 
       - name: Publish citation data
+        working-directory: google_scholar_crawler/results
         run: |
-          cd google_scholar_crawler/results
           git init
           git config --local user.name "${GITHUB_ACTOR}"
           git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
