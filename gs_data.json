@@ -1,0 +1,181 @@
+{
+  "container_type": "Author",
+  "filled": [
+    "basics",
+    "publications",
+    "indices",
+    "counts"
+  ],
+  "scholar_id": "mUFNGLwAAAAJ",
+  "source": "AUTHOR_PROFILE_PAGE",
+  "name": "Shuo Jin",
+  "url_picture": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=mUFNGLwAAAAJ&citpid=12",
+  "affiliation": "Ph.D, Beijing Jiaotong University, vivo Mobile Co.Ltd, University of Liverpool",
+  "organization": 14990939326409045635,
+  "interests": [
+    "low-level vision",
+    "open-world perception"
+  ],
+  "email_domain": "@liverpool.ac.uk",
+  "homepage": "https://kimsure.github.io/",
+  "citedby": 150,
+  "publications": {
+    "mUFNGLwAAAAJ:u-x6o8ySG0sC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Temporal consistency learning of inter-frames for video super-resolution",
+        "pub_year": "2023",
+        "citation": "IEEE Transactions on Circuits and Systems for Video Technology 33 (4), 1507-1520, 2023"
+      },
+      "filled": false,
+      "author_pub_id": "mUFNGLwAAAAJ:u-x6o8ySG0sC",
+      "num_citations": 57,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6609307485757594379",
+      "cites_id": [
+        "6609307485757594379"
+      ]
+    },
+    "mUFNGLwAAAAJ:IjCSPb-OGe4C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Dense residual transformer for image denoising",
+        "pub_year": "2022",
+        "citation": "Electronics 11 (3), 418, 2022"
+      },
+      "filled": false,
+      "author_pub_id": "mUFNGLwAAAAJ:IjCSPb-OGe4C",
+      "num_citations": 50,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1622796057526135006",
+      "cites_id": [
+        "1622796057526135006"
+      ]
+    },
+    "mUFNGLwAAAAJ:d1gkVwhDpl0C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Kernel dimension matters: To activate available kernels for real-time video super-resolution",
+        "pub_year": "2023",
+        "citation": "Proceedings of the 31st ACM International Conference on Multimedia, 8617-8625, 2023"
+      },
+      "filled": false,
+      "author_pub_id": "mUFNGLwAAAAJ:d1gkVwhDpl0C",
+      "num_citations": 18,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11362251703197957156",
+      "cites_id": [
+        "11362251703197957156"
+      ]
+    },
+    "mUFNGLwAAAAJ:zYLM7Y9cAGgC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Feature Purification Matters: Suppressing Outlier Propagation for Training-free Open-vocabulary Semantic Segmentation",
+        "pub_year": "2025",
+        "citation": "IEEE/CVF International Conference on Computer Vision (ICCV) Highlight, 20291 …, 2025"
+      },
+      "filled": false,
+      "author_pub_id": "mUFNGLwAAAAJ:zYLM7Y9cAGgC",
+      "num_citations": 13,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11059735958895721249",
+      "cites_id": [
+        "11059735958895721249"
+      ]
+    },
+    "mUFNGLwAAAAJ:u5HHmVD_uO8C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "CLG-INet: Coupled local-global interactive network for image restoration",
+        "pub_year": "2023",
+        "citation": "Proceedings of the 31st ACM International Conference on Multimedia, 7580-7589, 2023"
+      },
+      "filled": false,
+      "author_pub_id": "mUFNGLwAAAAJ:u5HHmVD_uO8C",
+      "num_citations": 6,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3767268382514977568",
+      "cites_id": [
+        "3767268382514977568"
+      ]
+    },
+    "mUFNGLwAAAAJ:2osOgNQ5qMEC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Multi-frame correlated representation network for video super-resolution",
+        "pub_year": "2023",
+        "citation": "2023 International Conference on Computer, Information and Telecommunication …, 2023"
+      },
+      "filled": false,
+      "author_pub_id": "mUFNGLwAAAAJ:2osOgNQ5qMEC",
+      "num_citations": 6,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17420431433215538820",
+      "cites_id": [
+        "17420431433215538820"
+      ]
+    },
+    "mUFNGLwAAAAJ:YsMSGLbcyi4C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "VIP: Visual-guided Prompt Evolution for Efficient Dense Vision-Language Inference",
+        "pub_year": "2026",
+        "citation": "arXiv preprint arXiv:2605.12325, 2026"
+      },
+      "filled": false,
+      "author_pub_id": "mUFNGLwAAAAJ:YsMSGLbcyi4C",
+      "num_citations": 0
+    },
+    "mUFNGLwAAAAJ:Y0pCki6q_DkC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "TF-SSD: A Strong Pipeline via Synergic Mask Filter for Training-free Co-salient Object Detection",
+        "pub_year": "2026",
+        "citation": "arXiv preprint arXiv:2604.00549, 2026"
+      },
+      "filled": false,
+      "author_pub_id": "mUFNGLwAAAAJ:Y0pCki6q_DkC",
+      "num_citations": 0
+    },
+    "mUFNGLwAAAAJ:W7OEmFMy1HYC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "TALENT: Target-aware Efficient Tuning for Referring Image Segmentation",
+        "pub_year": "2026",
+        "citation": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern …, 2026"
+      },
+      "filled": false,
+      "author_pub_id": "mUFNGLwAAAAJ:W7OEmFMy1HYC",
+      "num_citations": 0
+    },
+    "mUFNGLwAAAAJ:9yKSN-GCB0IC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Learning a Detail-Oriented Transformer for Image Denoising",
+        "pub_year": "2022",
+        "citation": "International Conference on Intelligent Information Hiding and Multimedia …, 2022"
+      },
+      "filled": false,
+      "author_pub_id": "mUFNGLwAAAAJ:9yKSN-GCB0IC",
+      "num_citations": 0
+    }
+  },
+  "citedby5y": 150,
+  "hindex": 6,
+  "hindex5y": 6,
+  "i10index": 4,
+  "i10index5y": 4,
+  "cites_per_year": {
+    "2022": 2,
+    "2023": 23,
+    "2024": 39,
+    "2025": 48,
+    "2026": 38
+  },
+  "updated": "2026-06-14T10:55:19+00:00"
+}
