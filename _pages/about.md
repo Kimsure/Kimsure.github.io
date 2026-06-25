@@ -36,14 +36,28 @@ neural machine translation and computer vision. I have published more than 100 p
 -->
 
 # 🔥 News
+- *2026.07*: &nbsp;🎉🎉 One Regular paper is accepted by ECCV 2026.
 - *2026.05*: &nbsp;🎉🎉 One Regular paper is accepted by ICML 2026.
 - *2026.03*: &nbsp;🎉🎉 One Regular paper and One Finding paper are accepted by CVPR 2026.
 - *2025.08*: &nbsp;🎉🎉 Our paper SFP has been selected as ICCV 2025 **highligh** paper! Many thanks to all co-authors.
-- *2025.06*: &nbsp;🎉🎉 One paper is accepted by ICCV 2025.
-- *2023.10*: &nbsp;🎉🎉 Two papers are accepted by ACM MM 2023.
-- *2023.04*: &nbsp;🎉🎉 One paper is accepted by T-CSVT.
+- *2025.06*: &nbsp;🎉🎉 One Regular paper is accepted by ICCV 2025.
+- *2023.10*: &nbsp;🎉🎉 Two Regular papers are accepted by ACM MM 2023.
+- *2023.04*: &nbsp;🎉🎉 One Regular paper is accepted by T-CSVT.
 
 # 📝 Publications
+
+<div class='paper-box'>
+<div class="badge" style="background: linear-gradient(135deg, #c08080, #a07070);">ECCV 2026</div>
+<div class='paper-box-image'><div><img src='images/Bound3D.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+Don't Starve the Boundaries: Boundary-Constrained Label Propagation for Weakly Supervised 3D Segmentation (*Equal Contribution)
+
+Shuwei Wu\*, **Shuo Jin\***, Zhijin He, Siyue Yu, ENG GEE LIM, Qiufeng Wang, Jimin Xiao
+
+[![project](https://img.shields.io/badge/Project-Bound3D-green)](https://kimsure.github.io/)    [![Paper](https://img.shields.io/badge/Paper-ECCV-b31b1b)](https://kimsure.github.io/) [![Poster](https://img.shields.io/badge/Poster-Bound3D-yellow)](https://kimsure.github.io/) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
+</div>
+</div>
 
 <div class='paper-box'>
 <div class="badge" style="background: linear-gradient(135deg, #c08080, #a07070);">ICML 2026</div>
