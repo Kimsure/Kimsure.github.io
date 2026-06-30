@@ -51,11 +51,11 @@ neural machine translation and computer vision. I have published more than 100 p
 <div class='paper-box-image'><div><img src='images/Bound3D.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-Don't Starve the Boundaries: Boundary-Constrained Label Propagation for Weakly Supervised 3D Segmentation (*Equal Contribution)
+Don't Starve the Boundaries: Boundary-Constrained Label Propagation for Weakly Supervised 3D Segmentation
 
-Shuwei Wu\*, **Shuo Jin\***, Zhijin He, Siyue Yu, ENG GEE LIM, Qiufeng Wang, Jimin Xiao
+Shuwei Wu, **Shuo Jin**, Zhijin He, Siyue Yu, ENG GEE LIM, Qiufeng Wang, Jimin Xiao
 
-[![project](https://img.shields.io/badge/Project-Bound3D-green)](https://kimsure.github.io/)    [![Paper](https://img.shields.io/badge/Paper-ECCV-b31b1b)](https://kimsure.github.io/) [![Poster](https://img.shields.io/badge/Poster-Bound3D-yellow)](https://kimsure.github.io/) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
+[![project](https://img.shields.io/badge/Project-Bound3D-green)](https://github.com/paul-swu/Bound3D)    [![Paper](https://img.shields.io/badge/Paper-ECCV-b31b1b)](https://kimsure.github.io/) [![Poster](https://img.shields.io/badge/Poster-Bound3D-yellow)](https://kimsure.github.io/) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
 </div>
 </div>
 
