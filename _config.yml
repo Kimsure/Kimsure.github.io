@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Shuo Jin"
-  avatar           : "images/shuojin.jpeg"
+  avatar           : "images/shuojin.png"
   bio              : "University of Liverpool"
   location         : "XJTLU"
   location_url     : "https://www.xjtlu.edu.cn/"
