@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SFP suppresses outlier propagation for training-free open-vocabulary semantic segmentation.">
+  <title>SFP: Feature Purification Matters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../project-shared/assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <section class="hero" aria-label="SFP hero">
+      <div class="hero-top">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">ICCV 2025 Highlight</p>
+            <h1 class="title">
+              <span class="title-line"><span class="title-mark">SFP</span><span class="title-punct">:</span> Feature Purification Matters</span>
+              <span class="title-line">Suppressing Outlier Propagation for Training-Free Open-Vocabulary Semantic Segmentation</span>
+            </h1>
+
+            <div class="authors">
+              <span class="author-row">
+                <span class="author">Shuo Jin</span>
+                <span class="author">Siyue Yu</span>
+                <span class="author">Bingfeng Zhang</span>
+                <span class="author">Mingjie Sun</span>
+                <span class="author">Yi Dong</span>
+                <span class="author">Jimin Xiao</span>
+              </span>
+            </div>
+
+            <div class="buttons" aria-label="Project links">
+              <a class="btn" href="https://openaccess.thecvf.com/content/ICCV2025/papers/Jin_Feature_Purification_Matters_Suppressing_Outlier_Propagation_for_Training-Free_Open-Vocabulary_Semantic_ICCV_2025_paper.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a class="btn" href="https://github.com/Kimsure/SFP" target="_blank" rel="noopener noreferrer">Code</a>
+              <a class="btn" href="../images/poster/poster_iccv25_SFP.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media section-narrow">
+        <img src="../images/SFP.png" class="teaser-image" alt="SFP framework">
+        <p class="caption">
+          <strong>Figure 1.</strong> SFP purifies CLIP features layer by layer before final open-vocabulary segmentation.
+        </p>
+      </div>
+    </section>
+
+    <section id="abstract">
+      <h2 class="subtitle">Abstract</h2>
+      <div class="abstract-text">
+        <p>
+          SFP improves training-free open-vocabulary semantic segmentation by focusing on a failure mode inside CLIP-style vision
+          backbones: attention outliers that emerge in intermediate layers and continue to propagate forward. These outliers distort
+          spatial perception and trigger irrelevant over-activation. SFP purifies those features during inference, strengthens
+          semantically relevant attention, and integrates cleaner multi-layer cues to produce more object-centric predictions.
+        </p>
+      </div>
+    </section>
+
+    <section id="method">
+      <h2 class="subtitle">Method Overview</h2>
+      <div class="section-stack">
+        <p class="content-block">
+          The framework combines three components. A Self-Adaptive Outlier Mitigator detects and mitigates outliers at each layer to
+          stop noisy responses from propagating. A Semantic-Aware Attention Enhancer increases attention intensity on semantically
+          relevant regions so the cleaned features remain focused on actual objects. Finally, a Hierarchical Attention Integrator
+          aggregates multi-layer attention maps into spatially coherent representations for the final segmentation step.
+        </p>
+        <div class="note-box">
+          <p>
+            The core insight of SFP is that open-vocabulary segmentation quality depends not only on the final layer output but also
+            on whether intermediate features stay stable and object-centric throughout the backbone.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights">
+      <h2 class="subtitle">Highlights</h2>
+      <div class="content-grid">
+        <article class="content-card">
+          <h3 class="subsection-title">Layer-wise Feature Purification</h3>
+          <p>SFP treats propagated outliers as a structural problem inside the encoder rather than a post-processing artifact.</p>
+        </article>
+        <article class="content-card">
+          <h3 class="subsection-title">Object-centric Attention</h3>
+          <p>The enhancer and integrator make the final response maps more spatially coherent and more aligned with true object regions.</p>
+        </article>
+        <article class="content-card">
+          <h3 class="subsection-title">Strong Zero-shot Benchmarks</h3>
+          <p>The paper reports consistent gains across eight segmentation benchmarks while remaining training-free at deployment time.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="results">
+      <h2 class="subtitle">Results</h2>
+      <div class="section-stack">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-value">44.0</span>
+            <span class="stat-label">Average mIoU across eight benchmark settings with CLIP ViT-B/16</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">41.1</span>
+            <span class="stat-label">Cityscapes mIoU, compared with 35.5 from NACLIP</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">+4.6</span>
+            <span class="stat-label">Average mIoU gain over NACLIP reported in the ICCV paper</span>
+          </div>
+        </div>
+        <div class="diagnostic-text">
+          <p>
+            The official evaluation spans PASCAL VOC, PASCAL Context, COCO Object, COCO Stuff, ADE20K, and Cityscapes settings. The
+            main takeaway is that better control of intermediate feature quality yields broad gains without adding any training-time
+            supervision at deployment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="citation">
+      <h2 class="subtitle">Citation</h2>
+      <div class="bibtex-box">
+        <button class="copy-btn" type="button" data-copy-target="bibtex-entry">Copy</button>
+        <pre><code id="bibtex-entry">@inproceedings{jin2025feature,
+  title     = {Feature Purification Matters: Suppressing Outlier Propagation for Training-Free Open-Vocabulary Semantic Segmentation},
+  author    = {Jin, Shuo and Yu, Siyue and Zhang, Bingfeng and Sun, Mingjie and Dong, Yi and Xiao, Jimin},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  pages     = {20291--20300},
+  year      = {2025}
+}</code></pre>
+      </div>
+    </section>
+  </div>
+
+  <script src="../project-shared/assets/main.js"></script>
+</body>
+</html>

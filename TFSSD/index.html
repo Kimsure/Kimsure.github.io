@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TF-SSD: a training-free co-salient object detection pipeline built from SAM and DINO.">
+  <title>TF-SSD: A Strong Pipeline via Synergic Mask Filter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../project-shared/assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <section class="hero" aria-label="TFSSD hero">
+      <div class="hero-top">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">CVPR 2026</p>
+            <h1 class="title">
+              <span class="title-line"><span class="title-mark">TF-SSD</span><span class="title-punct">:</span> A Strong Pipeline via</span>
+              <span class="title-line">Synergic Mask Filter for Training-free Co-salient Object Detection</span>
+            </h1>
+
+            <div class="authors">
+              <span class="author-row">
+                <span class="author">Zhijin He*</span>
+                <span class="author">Shuo Jin*</span>
+                <span class="author">Siyue Yu</span>
+                <span class="author">Shuwei Wu</span>
+                <span class="author">Bingfeng Zhang</span>
+                <span class="author">Li Yu</span>
+                <span class="author">Jimin Xiao</span>
+              </span>
+              <span class="affiliations">
+                <span class="affiliation">* Equal contribution</span>
+                <br>
+                <span class="affiliation">XJTLU · University of Liverpool · China University of Petroleum · NUIST</span>
+              </span>
+            </div>
+
+            <div class="buttons" aria-label="Project links">
+              <a class="btn" href="https://openaccess.thecvf.com/content/CVPR2026/papers/He_TF-SSD_A_Strong_Pipeline_via_Synergic_Mask_Filter_for_Training-free_CVPR_2026_paper.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a class="btn" href="https://arxiv.org/abs/2604.00549" target="_blank" rel="noopener noreferrer">arXiv</a>
+              <a class="btn" href="https://github.com/hzz-yy/TF-SSD" target="_blank" rel="noopener noreferrer">Code</a>
+              <a class="btn" href="../images/poster/poster_cvpr26_tfssd.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media section-narrow">
+        <img src="../images/TFSSD.png" class="teaser-image" alt="TF-SSD pipeline">
+        <p class="caption">
+          <strong>Figure 1.</strong> TF-SSD progressively narrows raw SAM masks into final co-salient predictions with DINO-guided filtering.
+        </p>
+      </div>
+    </section>
+
+    <section id="abstract">
+      <h2 class="subtitle">Abstract</h2>
+      <div class="abstract-text">
+        <p>
+          TF-SSD addresses co-salient object detection without task-specific training. Instead of learning a closed-set detector,
+          it combines two strong foundation models: SAM supplies a large candidate mask pool and DINO contributes saliency cues and
+          cross-image semantic consistency. The result is a pure inference pipeline that identifies the object consistently shared
+          across an image group while retaining broad generalization beyond the training distribution of earlier CoSOD models.
+        </p>
+      </div>
+    </section>
+
+    <section id="method">
+      <h2 class="subtitle">Method Overview</h2>
+      <div class="section-stack">
+        <p class="content-block">
+          TF-SSD is built around three filtering stages. The Quality Mask Generator (QMG) removes redundant or low-quality masks from
+          SAM outputs. The Intra-image Saliency Filter (ISF) then uses DINO attention maps to keep masks aligned with salient regions
+          in each image. Finally, the Inter-image Prototype Selector (IPS) computes similarity across image-group prototypes so the
+          final selection preserves objects that are both salient and shared across the group.
+        </p>
+        <div class="note-box">
+          <p>
+            This progressive narrowing strategy is the central design choice of TF-SSD: it starts from exhaustive proposals and
+            delays co-saliency decisions until the pipeline has accumulated both single-image and cross-image evidence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights">
+      <h2 class="subtitle">Highlights</h2>
+      <div class="content-grid">
+        <article class="content-card">
+          <h3 class="subsection-title">Training-free CoSOD</h3>
+          <p>The method replaces dataset-specific training with a carefully structured inference-only pipeline based on SAM and DINO.</p>
+        </article>
+        <article class="content-card">
+          <h3 class="subsection-title">Progressive Mask Refinement</h3>
+          <p>Mask quality, visual saliency, and group-level semantic consistency are checked in sequence rather than collapsed into one score.</p>
+        </article>
+        <article class="content-card">
+          <h3 class="subsection-title">Competitive Against Trained Models</h3>
+          <p>The paper reports that TF-SSD surpasses prior training-free methods and remains competitive with training-based CoSOD systems.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="results">
+      <h2 class="subtitle">Results</h2>
+      <div class="section-stack">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-value">0.686</span>
+            <span class="stat-label">CoCA Fmax, compared with 0.549 from ZS-CoSOD</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">0.763</span>
+            <span class="stat-label">CoCA S-measure, compared with 0.667 from ZS-CoSOD</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">0.899</span>
+            <span class="stat-label">CoSal2015 Fmax, compared with 0.799 from ZS-CoSOD</span>
+          </div>
+        </div>
+        <div class="diagnostic-text">
+          <p>
+            The official CVPR results also report CoCA MAE improving from 0.115 to 0.077. Taken together, these numbers show that the
+            progressive QMG-ISF-IPS pipeline is not just competitive for a training-free method; it substantially narrows the gap to
+            training-based CoSOD systems on standard group-image benchmarks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="citation">
+      <h2 class="subtitle">Citation</h2>
+      <div class="bibtex-box">
+        <button class="copy-btn" type="button" data-copy-target="bibtex-entry">Copy</button>
+        <pre><code id="bibtex-entry">@inproceedings{he2026tfssd,
+  title     = {TF-SSD: A Strong Pipeline via Synergic Mask Filter for Training-free Co-salient Object Detection},
+  author    = {He, Zhijin and Jin, Shuo and Yu, Siyue and Wu, Shuwei and Zhang, Bingfeng and Yu, Li and Xiao, Jimin},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages     = {32216--32225},
+  year      = {2026}
+}</code></pre>
+      </div>
+    </section>
+  </div>
+
+  <script src="../project-shared/assets/main.js"></script>
+</body>
+</html>

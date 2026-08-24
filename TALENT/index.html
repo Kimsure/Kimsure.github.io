@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TALENT: target-aware efficient tuning for referring image segmentation.">
+  <title>TALENT: Target-aware Efficient Tuning for Referring Image Segmentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../project-shared/assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <section class="hero" aria-label="TALENT hero">
+      <div class="hero-top">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">CVPR 2026 Findings</p>
+            <h1 class="title">
+              <span class="title-line"><span class="title-mark">TALENT</span><span class="title-punct">:</span> Target-aware Efficient Tuning</span>
+              <span class="title-line">for Referring Image Segmentation</span>
+            </h1>
+
+            <div class="authors">
+              <span class="author-row">
+                <span class="author">Shuo Jin</span>
+                <span class="author">Siyue Yu</span>
+                <span class="author">Bingfeng Zhang</span>
+                <span class="author">Chao Yao</span>
+                <span class="author">Meiqin Liu</span>
+                <span class="author">Jimin Xiao</span>
+              </span>
+            </div>
+
+            <div class="buttons" aria-label="Project links">
+              <a class="btn" href="https://openaccess.thecvf.com/content/CVPR2026F/papers/Jin_TALENT_Target-Aware_Efficient_Tuning_for_Referring_Image_Segmentation_CVPRF_2026_paper.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a class="btn" href="https://arxiv.org/abs/2604.00609" target="_blank" rel="noopener noreferrer">arXiv</a>
+              <a class="btn" href="https://github.com/Kimsure/TALENT" target="_blank" rel="noopener noreferrer">Code</a>
+              <a class="btn" href="../images/poster/poster_cvpr26_TALENT.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media section-narrow">
+        <img src="../images/TALENT.png" class="teaser-image" alt="TALENT framework">
+        <p class="caption">
+          <strong>Figure 1.</strong> TALENT introduces target-aware learning to suppress non-target activation in PET-based RIS.
+        </p>
+      </div>
+    </section>
+
+    <section id="abstract">
+      <h2 class="subtitle">Abstract</h2>
+      <div class="abstract-text">
+        <p>
+          TALENT studies referring image segmentation under parameter-efficient tuning. The paper shows that existing PET-based RIS
+          systems often activate objects from the correct category but the wrong instance, a failure mode named non-target activation
+          (NTA). TALENT attacks that mismatch by building stronger visual-text aggregation and adding target-aware learning objectives
+          that force the model to emphasize the instance truly described by the text expression.
+        </p>
+      </div>
+    </section>
+
+    <section id="method">
+      <h2 class="subtitle">Method Overview</h2>
+      <div class="section-stack">
+        <p class="content-block">
+          The framework starts with a Rectified Cost Aggregator (RCA), which builds richer visual-text interactions for text-referred
+          feature aggregation. On top of RCA, TALENT introduces a Target-aware Learning Mechanism (TLM) composed of Contextual Pairwise
+          Consistency Learning (CPCL) and Target Centric Contrastive Learning (TCCL). CPCL encourages holistic understanding of the
+          referent through a text-referred affinity map, while TCCL sharpens target localization and suppresses unrelated same-category
+          activations.
+        </p>
+        <div class="note-box">
+          <p>
+            TALENT also formalizes the NTA issue with an explicit metric, NTA-IoU, so the paper evaluates not only final segmentation
+            quality but also whether the model is attending to the correct referred instance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights">
+      <h2 class="subtitle">Highlights</h2>
+      <div class="content-grid">
+        <article class="content-card">
+          <h3 class="subsection-title">Problem-first Analysis</h3>
+          <p>The paper does not just propose a module; it identifies NTA as a concrete bottleneck in PET-based referring segmentation.</p>
+        </article>
+        <article class="content-card">
+          <h3 class="subsection-title">Efficient Target-aware Tuning</h3>
+          <p>RCA and TLM improve target specificity without abandoning the efficiency advantages of parameter-efficient tuning.</p>
+        </article>
+        <article class="content-card">
+          <h3 class="subsection-title">Complementary Objectives</h3>
+          <p>CPCL improves contextual alignment, while TCCL helps the model distinguish the correct instance from nearby distractors.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="results">
+      <h2 class="subtitle">Results</h2>
+      <div class="section-stack">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-value">68.4</span>
+            <span class="stat-label">G-Ref Google-val mIoU, compared with 65.9 from DETRIS</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">40.1</span>
+            <span class="stat-label">RefCOCO Precision@0.9, compared with 27.5 from DETRIS</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">+12.6</span>
+            <span class="stat-label">Precision@0.9 absolute gain on RefCOCO</span>
+          </div>
+        </div>
+        <div class="diagnostic-text">
+          <p>
+            The reported gains support the paper's main claim: once NTA is explicitly addressed with RCA, CPCL, and TCCL, the model
+            becomes much better at selecting the correct referred instance instead of merely finding a visually similar object.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="citation">
+      <h2 class="subtitle">Citation</h2>
+      <div class="bibtex-box">
+        <button class="copy-btn" type="button" data-copy-target="bibtex-entry">Copy</button>
+        <pre><code id="bibtex-entry">@inproceedings{jin2026talent,
+  title     = {TALENT: Target-aware Efficient Tuning for Referring Image Segmentation},
+  author    = {Jin, Shuo and Yu, Siyue and Zhang, Bingfeng and Yao, Chao and Liu, Meiqin and Xiao, Jimin},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages     = {7472--7482},
+  year      = {2026}
+}</code></pre>
+      </div>
+    </section>
+  </div>
+
+  <script src="../project-shared/assets/main.js"></script>
+</body>
+</html>

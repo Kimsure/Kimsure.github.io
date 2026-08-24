@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KSNet for real-time video super-resolution with kernel-split design and efficient temporal alignment.">
+  <title>KSNet: Kernel Dimension Matters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../project-shared/assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <section class="hero" aria-label="KSNet hero">
+      <div class="hero-top">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">ACM MM 2023</p>
+            <h1 class="title">
+              <span class="title-line"><span class="title-mark">KSNet</span><span class="title-punct">:</span> Kernel Dimension Matters</span>
+              <span class="title-line">To Activate Available Kernels for Real-time Video Super-Resolution</span>
+            </h1>
+
+            <div class="authors">
+              <span class="author-row">
+                <span class="author">Shuo Jin</span>
+                <span class="author">Meiqin Liu</span>
+                <span class="author">Chao Yao</span>
+                <span class="author">Chunyu Lin</span>
+                <span class="author">Yao Zhao</span>
+              </span>
+            </div>
+
+            <div class="buttons" aria-label="Project links">
+              <a class="btn" href="https://doi.org/10.1145/3581783.3611908" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a class="btn" href="https://github.com/Kimsure/KSNet" target="_blank" rel="noopener noreferrer">Code</a>
+              <a class="btn" href="../images/poster/poster_acm_0942.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media section-narrow">
+        <img src="../images/KSNet.png" class="teaser-image" alt="KSNet visual comparison on REDS4">
+        <p class="caption">
+          <strong>Figure 1.</strong> Visual comparison on REDS4 showing sharper details from KSNet in an online video SR setting.
+        </p>
+      </div>
+    </section>
+
+    <section id="abstract">
+      <h2 class="subtitle">Abstract</h2>
+      <div class="abstract-text">
+        <p>
+          KSNet is designed for real-time video super-resolution, where reconstruction quality and latency must be balanced at every
+          stage of the pipeline. The paper argues that temporal redundancy is underused by earlier efficient VSR systems, and proposes
+          a kernel-split strategy that treats dynamic and static feature channels differently. By activating richer kernels only where
+          they matter most, KSNet reduces computation while preserving stronger temporal modeling.
+        </p>
+      </div>
+    </section>
+
+    <section id="method">
+      <h2 class="subtitle">Method Overview</h2>
+      <div class="section-stack">
+        <p class="content-block">
+          The key idea is to split feature channels into high-value and low-value groups according to their contribution. A multi-channel
+          selection unit performs that discrimination hierarchically. Low-dimensional kernels are reused on low-value channels to save
+          cost, while re-parameterized convolutional kernels are activated on high-value channels to model dynamic information more
+          effectively. KSNet also adds a multiple flow deformable alignment module so temporal correspondence remains sufficiently rich
+          without turning the full system into a heavy offline model.
+        </p>
+        <div class="note-box">
+          <p>
+            In short, KSNet does not merely shrink the network. It redistributes computation across kernel dimensions so the expensive
+            operations are concentrated on motion-sensitive features.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights">
+      <h2 class="subtitle">Highlights</h2>
+      <div class="content-grid">
+        <article class="content-card">
+          <h3 class="subsection-title">Kernel-split Computation</h3>
+          <p>The method dynamically activates available kernel dimensions based on channel importance instead of applying one uniform convolution everywhere.</p>
+        </article>
+        <article class="content-card">
+          <h3 class="subsection-title">Efficient Temporal Alignment</h3>
+          <p>The multiple flow deformable alignment module keeps temporal representation strong enough for online VSR with affordable cost.</p>
+        </article>
+        <article class="content-card">
+          <h3 class="subsection-title">Real-time Reconstruction Quality</h3>
+          <p>The paper positions KSNet as a practical design that improves reconstruction quality while remaining suitable for low-latency deployment.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="results">
+      <h2 class="subtitle">Results</h2>
+      <div class="section-stack">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-value">x4</span>
+            <span class="stat-label">Official code and evaluation configs are provided for 4x video super-resolution</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">REDS4</span>
+            <span class="stat-label">The public project includes REDS training and REDS4 validation settings</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">Runtime + Quality</span>
+            <span class="stat-label">The official ACM abstract states that KSNet improves both reconstruction quality and runtime</span>
+          </div>
+        </div>
+        <div class="diagnostic-text">
+          <p>
+            The public ACM abstract clearly supports the qualitative conclusion that KSNet improves quality-speed trade-offs, but the
+            original benchmark tables were not directly parseable during verification. This page therefore avoids listing unverified
+            PSNR, SSIM, FPS, or Vid4/Vimeo numbers and keeps the emphasis on validated problem setting, method design, and official
+            qualitative evidence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="citation">
+      <h2 class="subtitle">Citation</h2>
+      <div class="bibtex-box">
+        <button class="copy-btn" type="button" data-copy-target="bibtex-entry">Copy</button>
+        <pre><code id="bibtex-entry">@inproceedings{jin2023kernel,
+  title     = {Kernel Dimension Matters: To Activate Available Kernels for Real-time Video Super-Resolution},
+  author    = {Jin, Shuo and Liu, Meiqin and Yao, Chao and Lin, Chunyu and Zhao, Yao},
+  booktitle = {Proceedings of the 31st ACM International Conference on Multimedia},
+  pages     = {8617--8625},
+  year      = {2023}
+}</code></pre>
+      </div>
+    </section>
+  </div>
+
+  <script src="../project-shared/assets/main.js"></script>
+</body>
+</html>

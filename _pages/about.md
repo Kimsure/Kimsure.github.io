@@ -55,7 +55,7 @@ Don't Starve the Boundaries: Boundary-Constrained Label Propagation for Weakly S
 
 Shuwei Wu, **Shuo Jin**, Zhijin He, Siyue Yu, ENG GEE LIM, Qiufeng Wang, Jimin Xiao
 
-[![project](https://img.shields.io/badge/Project-Bound3D-green)](https://github.com/paul-swu/Bound3D)    [![Paper](https://img.shields.io/badge/Paper-ECCV-b31b1b)](https://kimsure.github.io/) [![Poster](https://img.shields.io/badge/Poster-Bound3D-yellow)](https://kimsure.github.io/) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
+[![project](https://img.shields.io/badge/Project-Bound3D-green)](/Bound3D)    [![Paper](https://img.shields.io/badge/Paper-Coming%20Soon-lightgrey)](/Bound3D) [![Poster](https://img.shields.io/badge/Poster-Bound3D-yellow)](../images/poster/poster_eccv26_bound3D.pdf) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
 </div>
 </div>
 
@@ -81,7 +81,7 @@ TF-SSD: A Strong Pipeline via Synergic Mask Filter for Training-free Co-salient 
 
 Zhijin He\*, **Shuo Jin\***, Siyue Yu, Shuwei Wu, Bingfeng Zhang, Li Yu, Jimin Xiao
 
-[![project](https://img.shields.io/badge/Project-TFSSD-green)](https://github.com/hzz-yy/TF-SSD)    [![arXiv](https://img.shields.io/badge/Paper-CVPR-b31b1b)](https://arxiv.org/abs/2604.00549) [![Poster](https://img.shields.io/badge/Poster-TFSSD-yellow)](../images/poster/poster_cvpr26_tfssd.pdf) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
+[![project](https://img.shields.io/badge/Project-TFSSD-green)](/TFSSD)    [![arXiv](https://img.shields.io/badge/Paper-CVPR-b31b1b)](https://arxiv.org/abs/2604.00549) [![Poster](https://img.shields.io/badge/Poster-TFSSD-yellow)](../images/poster/poster_cvpr26_tfssd.pdf) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
 </div>
 </div>
 
@@ -92,7 +92,7 @@ TALENT: Target-aware Efficient Tuning for Referring Image Segmentation
 
 **Shuo Jin**, Siyue Yu, Bingfeng Zhang, Chao Yao, Meiqin Liu, Jimin Xiao
 
-[![project](https://img.shields.io/badge/Project-TALENT-green)](https://github.com/Kimsure/TALENT)    [![arXiv](https://img.shields.io/badge/Paper-CVPR-b31b1b)](https://arxiv.org/abs/2604.00609) [![Poster](https://img.shields.io/badge/Poster-TALENT-yellow)](../images/poster/poster_cvpr26_TALENT.pdf) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
+[![project](https://img.shields.io/badge/Project-TALENT-green)](/TALENT)    [![arXiv](https://img.shields.io/badge/Paper-CVPR-b31b1b)](https://arxiv.org/abs/2604.00609) [![Poster](https://img.shields.io/badge/Poster-TALENT-yellow)](../images/poster/poster_cvpr26_TALENT.pdf) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
 </div>
 </div>
 
@@ -104,7 +104,7 @@ Feature Purification Matters: Suppressing Outlier Propagation for Training-Free 
 
 **Shuo Jin**, Siyue Yu, Bingfeng Zhang, Mingjie Sun, Yi Dong, Jimin Xiao
 
-[![project](https://img.shields.io/badge/Project-SFP-green)](https://github.com/Kimsure/SFP)    [![arXiv](https://img.shields.io/badge/Paper-ICCV-b31b1b)](https://openaccess.thecvf.com/content/ICCV2025/papers/Jin_Feature_Purification_Matters_Suppressing_Outlier_Propagation_for_Training-Free_Open-Vocabulary_Semantic_ICCV_2025_paper.pdf) [![Poster](https://img.shields.io/badge/Poster-SFP-yellow)](../images/poster/poster_iccv25_SFP.pdf) <a href="#LICENSE--citation"><img alt="License: MIT" src="https://img.shields.io/badge/LICENSE-MIT-blue.svg"/></a>
+[![project](https://img.shields.io/badge/Project-SFP-green)](/SFP)    [![arXiv](https://img.shields.io/badge/Paper-ICCV-b31b1b)](https://openaccess.thecvf.com/content/ICCV2025/papers/Jin_Feature_Purification_Matters_Suppressing_Outlier_Propagation_for_Training-Free_Open-Vocabulary_Semantic_ICCV_2025_paper.pdf) [![Poster](https://img.shields.io/badge/Poster-SFP-yellow)](../images/poster/poster_iccv25_SFP.pdf) <a href="#LICENSE--citation"><img alt="License: MIT" src="https://img.shields.io/badge/LICENSE-MIT-blue.svg"/></a>
 </div>
 </div>
 
@@ -115,7 +115,7 @@ Kernel Dimension Matters: To Activate Available Kernels for Real-time Video Supe
 
 **Shuo Jin**, Meiqin Liu, Chao Yao, Chunyu Lin, Yao Zhao
 
-[![project](https://img.shields.io/badge/Project-KSNet-green)](https://github.com/Kimsure/KSNet)    [![arXiv](https://img.shields.io/badge/Paper-ACMMM-b31b1b)](https://dl.acm.org/doi/pdf/10.1145/3581783.3611908) [![Poster](https://img.shields.io/badge/Poster-KSNet-yellow)](../images/poster/poster_acm_0942.pdf) <a href="#LICENSE--citation"><img alt="License: MIT" src="https://img.shields.io/badge/LICENSE-MIT-blue.svg"/></a>
+[![project](https://img.shields.io/badge/Project-KSNet-green)](/KSNet)    [![arXiv](https://img.shields.io/badge/Paper-ACMMM-b31b1b)](https://dl.acm.org/doi/pdf/10.1145/3581783.3611908) [![Poster](https://img.shields.io/badge/Poster-KSNet-yellow)](../images/poster/poster_acm_0942.pdf) <a href="#LICENSE--citation"><img alt="License: MIT" src="https://img.shields.io/badge/LICENSE-MIT-blue.svg"/></a>
 <!-- [[PDF]](https://dl.acm.org/doi/pdf/10.1145/3581783.3611908) -->
 <!-- [[Code]](https://github.com/Kimsure/KSNet)
 [[Poster]](.../images/poster/poster_acm_0942.pdf) -->

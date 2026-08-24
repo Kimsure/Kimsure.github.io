@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bound3D: boundary-constrained label propagation for weakly supervised 3D segmentation.">
+  <title>Bound3D: Don't Starve the Boundaries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../project-shared/assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <section class="hero" aria-label="Bound3D hero">
+      <div class="hero-top">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">ECCV 2026</p>
+            <h1 class="title">
+              <span class="title-line"><span class="title-mark">Bound3D</span><span class="title-punct">:</span> Don't Starve the Boundaries</span>
+              <span class="title-line">Boundary-Constrained Label Propagation for Weakly Supervised 3D Segmentation</span>
+            </h1>
+
+            <div class="authors">
+              <span class="author-row">
+                <span class="author">Shuwei Wu</span>
+                <span class="author">Shuo Jin</span>
+                <span class="author">Zhijin He</span>
+                <span class="author">Siyue Yu</span>
+                <span class="author">ENG GEE LIM</span>
+                <span class="author">Qiufeng Wang</span>
+                <span class="author">Jimin Xiao</span>
+              </span>
+              <span class="affiliations">
+                <span class="affiliation">Official project status: repository is public and the complete code is marked as coming soon.</span>
+              </span>
+            </div>
+
+            <div class="buttons" aria-label="Project links">
+              <a class="btn" href="https://github.com/Kimsure/Bound3D" target="_blank" rel="noopener noreferrer">Code</a>
+              <a class="btn" href="../images/poster/poster_eccv26_bound3D.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
+              <span class="btn btn-disabled">Paper Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media section-narrow">
+        <img src="../images/Bound3D.png" class="teaser-image" alt="Bound3D overview figure">
+        <p class="caption">
+          <strong>Figure 1.</strong> Official overview of the Bound3D pipeline for weakly supervised 3D segmentation.
+        </p>
+      </div>
+    </section>
+
+    <section id="abstract">
+      <h2 class="subtitle">Abstract</h2>
+      <div class="abstract-text">
+        <p>
+          Bound3D targets a core weakness of weakly supervised point-cloud segmentation: sparse labels rarely cover difficult
+          boundary regions, so models learn confident interiors but unreliable object contours. The method introduces a 2D-assisted
+          pseudo-label propagation paradigm that does not depend on the model's own predictions or external foundation models.
+          By producing cleaner pseudo labels and separating interior supervision from boundary supervision, Bound3D improves both
+          category representation and boundary robustness under extremely limited annotation.
+        </p>
+      </div>
+    </section>
+
+    <section id="method">
+      <h2 class="subtitle">Method Overview</h2>
+      <div class="section-stack">
+        <p class="content-block">
+          The official pipeline first illuminates boundary evidence with image, depth, and normal cues, then generates
+          boundary-aware pseudo labels through a dedicated propagation stage. The training process follows a divide-and-conquer
+          design: interior pseudo labels stabilize the core semantic regions, while boundary pseudo labels focus the optimization
+          on hard contours that are underrepresented by sparse human annotations.
+        </p>
+        <div class="note-box">
+          <p>
+            Compared with direct SAM-based 2D-3D projection, the official repository reports that Bound3D generates pseudo labels
+            that are both purer and more uniformly distributed, which is especially important when annotation is restricted to
+            one point per object.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights">
+      <h2 class="subtitle">Highlights</h2>
+      <div class="content-grid">
+        <article class="content-card">
+          <h3 class="subsection-title">Boundary-first Weak Supervision</h3>
+          <p>The method explicitly compensates for the boundary supervision missing from sparse point annotations.</p>
+        </article>
+        <article class="content-card">
+          <h3 class="subsection-title">Offline High-purity Propagation</h3>
+          <p>Pseudo labels are generated without relying on self-training loops, which reduces the classic confirmation bias of online labeling.</p>
+        </article>
+        <article class="content-card">
+          <h3 class="subsection-title">Decoupled Optimization Targets</h3>
+          <p>Interior and boundary regions are supervised differently so the model can learn stable class cores without neglecting hard edges.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="results">
+      <h2 class="subtitle">Results</h2>
+      <div class="section-stack">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-value">&gt;94.4%</span>
+            <span class="stat-label">Initial offline propagation accuracy on S3DIS under 1 pt/obj</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">~93k</span>
+            <span class="stat-label">Pseudo-labeled points per scene reported by the official repository</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">SOTA</span>
+            <span class="stat-label">Repository summary reports stronger results than prior weakly supervised methods</span>
+          </div>
+        </div>
+        <div class="diagnostic-text">
+          <p>
+            The public repository currently exposes the abstract and the official overview figure, but not the final camera-ready PDF
+            or formal ECCV BibTeX. This page therefore keeps the quantitative claims limited to the numbers already published by the
+            authors in the repository summary.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="citation">
+      <h2 class="subtitle">Citation</h2>
+      <div class="bibtex-box">
+        <button class="copy-btn" type="button" data-copy-target="bibtex-entry">Copy</button>
+        <pre><code id="bibtex-entry">Official BibTeX is not publicly available yet.
+Please cite the final ECCV 2026 version once the authors release it.</code></pre>
+      </div>
+    </section>
+  </div>
+
+  <script src="../project-shared/assets/main.js"></script>
+</body>
+</html>
