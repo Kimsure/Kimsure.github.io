@@ -183,7 +183,7 @@ Meiqin Liu, **Shuo Jin**, Chao Yao, Chunyu Lin, Yao Zhao
 # 💬 Social Work
 <span class='anchor' id='-Social'></span>
 
-- Reviewer for IEEE T-IP, ACMMM2025, ICCV2025, AAAI2026, CVPR2025/2026.
+- Reviewer for IEEE T-IP, ACMMM2025, ICCV2025, AAAI2026/2027, CVPR2025/2026, ICLR2027.
 
 # 🎓 Teaching
 <span class='anchor' id='-teaching'></span>
