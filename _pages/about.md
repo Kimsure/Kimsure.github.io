@@ -55,7 +55,7 @@ Don't Starve the Boundaries: Boundary-Constrained Label Propagation for Weakly S
 
 Shuwei Wu, **Shuo Jin**, Zhijin He, Siyue Yu, ENG GEE LIM, Qiufeng Wang, Jimin Xiao
 
-[![project](https://img.shields.io/badge/Project-Bound3D-green)](/Bound3D)    [![Paper](https://img.shields.io/badge/Paper-Coming%20Soon-lightgrey)](/Bound3D) [![Poster](https://img.shields.io/badge/Poster-Bound3D-yellow)](../images/poster/poster_eccv26_bound3D.pdf) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
+[![project](https://img.shields.io/badge/Project-Bound3D-green)](/Bound3D)    [![Paper](https://img.shields.io/badge/Paper-ECCV-b31b1b)](https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/12260.pdf) [![Poster](https://img.shields.io/badge/Poster-Bound3D-yellow)](../images/poster/poster_eccv26_bound3D.pdf) <a href="#LICENSE--citation"><img alt="License: Apache" src="https://img.shields.io/badge/LICENSE-Apache2.0-blue.svg"/></a>
 </div>
 </div>
 
