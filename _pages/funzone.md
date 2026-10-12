@@ -3,7 +3,7 @@ permalink: /funzone/
 title: "Fun Zone"
 except: "Play Games"
 author_profile: false
-layout: default
+layout: game
 ---
 
 <style>

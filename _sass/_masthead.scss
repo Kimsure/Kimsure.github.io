@@ -3,10 +3,13 @@
    ========================================================================== */
 
 .masthead {
-  position: sticky;
-  top: 0;
-  background-color: $background-color;
+  position: fixed;
+  background: #FFFFFF;
   border-bottom: 1px solid $border-color;
+  height: $masthead-height;
+  top: 0;
+  width: 100%;
+
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
@@ -16,9 +19,9 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: .5em;
-    font-family: $sans-serif-narrow;
-
+    padding: 1em 1em 1em;
+    font-family: $global-font-family;
+    font-size: 17px;
     @include breakpoint($x-large) {
       max-width: $x-large;
     }
@@ -43,20 +46,13 @@
   }
 }
 
-.masthead__menu-home-item {
-  @include breakpoint($medium) {
-    display: block !important;
-  }
-  display: none !important;
-}
-
 .masthead__menu-item {
   display: block;
   list-style-type: none;
   white-space: nowrap;
 
   &--lg {
-    padding-right: 2em;
+    padding-right: 3em;
     font-weight: 700;
   }
 }

@@ -1,72 +1,215 @@
+﻿# WowPage
 
-<h1 align="center">
-AcadHomepage
-</h1>
+This is Shuo Jin's homepage, using the original WowPage repository at commit
+`162d7db`. The original Sass, CSS, layouts, profile sidebar, and publication
+scripts are retained without visual redesign. Personal content is edited in
+`_pages/about.md` and `_config.yml`. Citation updates, existing project pages,
+and the Fun Zone are retained from the previous site.
 
-<div align="center">
+WowPage is a clean, responsive academic homepage built with Jekyll and adapted from the Academic Pages theme. It is designed for students, researchers, and engineers who want a personal website for introducing their profile, publications, projects, experience, awards, talks, services, and CV.
 
-[![](https://img.shields.io/github/stars/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/forks/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/issues/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/license/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io/blob/main/LICENSE)  | [中文文档](./docs/README-zh.md) 
-</div>
+Template is originated from [selen-suyue.github.io](https://selen-suyue.github.io/).
+Example：[wd7ang.github.io](https://wd7ang.github.io).
+## Features
 
-<p align="center">A Modern and Responsive Academic Personal Homepage</p>
+- Academic-style homepage with author profile sidebar
+- Single-page navigation for news, experience, publications, projects, awards, services, and talks
+- Custom homepage styling through `assets/css/home.css`
+- Publication filtering on the homepage
+- CV link support through the navigation menu
+- Social profile fields managed from `_config.yml`
+- GitHub Pages compatible Jekyll setup
+- Sitemap and feed support through Jekyll plugins
 
-<p align="center">
-    <br>
-    <img src="docs/screenshot.png" width="100%"/>
-    <br>
-</p>
+## Project Structure
 
-Some examples:
-- [Demo Page](https://rayeren.github.io/acad-homepage.github.io/)
-- [Personal Homepage of the author](https://rayeren.github.io/)
+```text
+.
+├── _config.yml              # Main site configuration and author metadata
+├── _data/
+│   ├── navigation.yml       # Header navigation links
+│   ├── authors.yml          # Optional author data
+│   └── ui-text.yml          # Theme UI text
+├── _includes/               # Reusable Liquid partials
+├── _layouts/                # Page layout templates
+├── _pages/                  # Main site pages, including the homepage
+├── _sass/                   # Theme Sass source files
+├── assets/                  # CSS, JavaScript, and theme assets
+├── images/                  # Profile, logos, publication images, and other media
+├── markdown_generator/      # Helper scripts/templates for generating markdown content
+├── talkmap/                 # Talk map page assets
+├── Gemfile                  # Ruby/Jekyll dependencies
+├── package.json             # JavaScript build dependencies and scripts
+└── LICENSE
+```
 
-## Key Features
-- **Automatically update google scholar citations**: using the google scholar crawler and github action, this REPO can update the author citations and publication citations automatically.
-- **Support Google analytics**: you can trace the traffics of your homepage by easy configuration.
-- **Responsive**: this homepage automatically adjust for different screen sizes and viewports.
-- **Beautiful and Simple Design**: this homepage is beautiful and simple, which is very suitable for academic personal homepage.
-- **SEO**: search Engine Optimization (SEO) helps search engines find the information you publish on your homepage easily, then rank it against similar websites.
+## Getting Started
 
-## Quick Start
+### Prerequisites
 
-1. Fork this REPO and rename to `USERNAME.github.io`, where `USERNAME` is your github USERNAME.
-1. Configure the google scholar citation crawler:
-    1. Find your google scholar ID in the url of your google scholar page (e.g., https://scholar.google.com/citations?user=SCHOLAR_ID), where `SCHOLAR_ID` is your google scholar ID.
-    1. Set GOOGLE_SCHOLAR_ID variable to your google scholar ID in `Settings -> Secrets -> Actions -> New repository secret` of the REPO website with `name=GOOGLE_SCHOLAR_ID` and `value=SCHOLAR_ID`.
-    1. Click the `Action` of the REPO website and enable the workflows by clicking *"I understand my workflows, go ahead and enable them"*. This github action will generate google scholar citation stats data `gs_data.json` in `google-scholar-stats` branch of your REPO. When you update your main branch, this action will be triggered. This action will also be trigger 08:00 UTC everyday.
-1. Generate favicon using [favicon-generator](https://redketchup.io/favicon-generator) and download all generated files to `REPO/images`.
-1. Modify the configuration of your homepage `_config.yml`:
-    1. `title`: the title of your homepage
-    1. `description`: the description of your homepage
-    1. `repository`: USER_NAME/REPO_NAME  
-    1. `google_analytics_id` (optional): google analytics ID
-    1. SEO Related keys (optional): get these keys from search engine consoles (e.g. Google, Bing and Baidu) and paste here.
-    1. `author`: the author information of this homepage, including some other websites, emails, city and univeristy.
-    1. More configuration details are described in the comments.
-1. Add your homepage content in `_pages/about.md`.
-    1. You can use html+markdown syntax just same as jekyll.
-    1. You can use a `<span>` tag with class `show_paper_citations` and attribute `data` to display the citations of your paper. Set the data to the google scholar paper ID. For
-        ```html
-        <span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span>
-        ``` 
-        > Q: How to get the google scholar paper ID?   
-        > A: Enter your google scholar homepage and click the paper name. Then you can see the paper ID from `citation_for_view=XXXX`, where `XXXX` is the required paper ID.
-1. Your page will be published at `https://USERNAME.github.io`.
+Install the following tools before running the site locally:
 
-## Debug Locally
+- Ruby and Bundler
+- Node.js and npm
+- Git
 
-1. Clone your REPO to local using `git clone`.
-1. Install Jekyll building environment, including `Ruby`, `RubyGems`, `GCC` and `Make` following [the installation guide](https://jekyllrb.com/docs/installation/#requirements).
-1. Run `bash run_server.sh` to start Jekyll livereload server.
-1. Open http://127.0.0.1:4000 in your browser.
-1. If you change the source code of the website, the livereload server will automatically refresh.
-1. When you finish the modification of your homepage, `commit` your changings and `push` to your remote REPO using `git` command.
+### Installation
 
-# Acknowledges
+Clone the repository and install dependencies:
 
-- AcadHomepage incorporates Font Awesome, which is distributed under the terms of the SIL OFL 1.1 and MIT License.
-- AcadHomepage is influenced by the github repo [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes), which is distributed under the MIT License.
-- AcadHomepage is influenced by the github repo [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io), which is distributed under the MIT License.
+```bash
+git clone <your-repository-url>
+cd WowPage
+bundle install
+npm install
+```
+
+### Run Locally
+
+Start the Jekyll development server:
+
+```bash
+bundle exec jekyll serve
+```
+
+Then open the local URL shown in the terminal, usually:
+
+```text
+http://127.0.0.1:4000/
+```
+
+### Build the Site
+
+Generate the static site:
+
+```bash
+bundle exec jekyll build
+```
+
+The generated files will be written to `_site/`.
+
+## Customization
+
+### Basic Site Information
+
+Edit `_config.yml` to update the site title, description, URL, author name, biography, affiliation, location, email, avatar, and social links.
+
+Important fields include:
+
+```yaml
+title: "WowPage"
+name: "Your Name"
+description: "A clean academic homepage template."
+author:
+  avatar: "1.png"
+  name: "Your Name"
+  bio: "Student and researcher."
+  location: "City, Country"
+  employer: "Institution or Company"
+  email: "name@example.com"
+```
+
+### Homepage Content
+
+The homepage content is mainly maintained in:
+
+```text
+_pages/about.md
+```
+
+Update this file to edit sections such as news, experience, publications, projects, awards, services, talks, and the introductory text.
+
+### Navigation
+
+Edit the navigation menu in:
+
+```text
+_data/navigation.yml
+```
+
+For example:
+
+```yaml
+main:
+  - title: "News"
+    url: "/#news"
+  - title: "Experience"
+    url: "/#experience"
+  - title: "Pub"
+    url: "/#publications"
+  - title: "CV-En"
+    url: "/files/weidongtang_resume.pdf"
+```
+
+### Images and Media
+
+Place profile photos, organization logos, project images, publication thumbnails, and other visual assets in:
+
+```text
+images/
+```
+
+Reference them from pages using paths such as:
+
+```html
+<img src="images/example.png" alt="Example image">
+```
+
+### JavaScript and CSS
+
+Custom homepage styles can be edited in:
+
+```text
+assets/css/home.css
+```
+
+JavaScript assets are built with npm:
+
+```bash
+npm run build:js
+```
+
+## Deployment
+
+This site is compatible with GitHub Pages.
+
+A typical deployment workflow is:
+
+1. Push the repository to GitHub.
+2. Open the repository settings on GitHub.
+3. Enable GitHub Pages.
+4. Select the branch and folder used for deployment.
+5. Update `url`, `baseurl`, and `repository` in `_config.yml` if needed.
+
+For a user or organization site, the repository is commonly named:
+
+```text
+<username>.github.io
+```
+
+For a project site, set `baseurl` to the repository name:
+
+```yaml
+url: "https://<username>.github.io"
+baseurl: "/<repository-name>"
+```
+
+## Content Checklist
+
+Before publishing, consider updating:
+
+- Author name, bio, institution, location, and email in `_config.yml`
+- Avatar and profile images in `images/`
+- Navigation links in `_data/navigation.yml`
+- Homepage sections in `_pages/about.md`
+- CV file and CV link
+- Publication metadata, project descriptions, and external links
+- Analytics or site verification settings, if needed
+
+## License
+
+This project is released under the MIT License. See `LICENSE` for details.
+
+## Acknowledgements
+
+We appreciate your use of this template and look forward to your contributions. Contributors are welcome to voluntarily submit homepages built with this template for inclusion in our showcase.

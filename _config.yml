@@ -1,80 +1,128 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
-
-# Site Settings
+locale                   : "en-US"
 title                    : "Shuo Jin"
-description              : "M.Eng. at MePro in BJTU. Ph.D at MMT lab in UoL."
+title_separator          : "-"
+name                     : "Shuo Jin"
+description              : &description "Ph.D. student at the University of Liverpool. Open-vocabulary dense perception, multimodal visual grounding, and vision-language learning."
+url                      : "https://kimsure.github.io"
+baseurl                  : ""
 repository               : "Kimsure/Kimsure.github.io"
 google_scholar_stats_use_cdn : true
+github:
+  url: "https://kimsure.github.io"
 
-# google analytics
-google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
-
-# SEO Related
-google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
-bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
-baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
-
-# Site Author
 author:
+  avatar           : "shuojin.png"
   name             : "Shuo Jin"
-  avatar           : "images/shuojin.png"
-  bio              : "University of Liverpool"
+  pronouns         :
+  bio              : "Ph.D. student at the University of Liverpool."
   location         : "XJTLU"
-  location_url     : "https://www.xjtlu.edu.cn/"
-  employer         :
-  pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=mUFNGLwAAAAJ"
-  email            : "kingsure@bjtu.edu.cn"
-  researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
+  employer         : "University of Liverpool"
   uri              :
+  email            : "kingsure@bjtu.edu.cn"
+
+  arxiv            :
+  googlescholar    : "https://scholar.google.com/citations?user=mUFNGLwAAAAJ"
+  impactstory      :
+  orcid            : "https://orcid.org/0000-0001-9512-6359"
+  semantic         :
+  pubmed           :
+  researchgate     :
+
   bitbucket        :
   codepen          :
   dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
   github           : "Kimsure"
-  google_plus      :
-  keybase          :
-  instagram        :
-  impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
-  lastfm           :
+  kaggle           :
+  stackoverflow    :
+
+  WeChat           :
   linkedin         : "shuo-jin-30a339328"
-  dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : "https://orcid.org/0000-0001-9512-6359"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
-  twitter          : 
-  vine             :
-  weibo            :
-  xing             :
+  bilibili         :
+  twitter          :
   youtube          :
-  wikipedia        :
+  zhihu            :
+  XiaoHongShu      :
 
+teaser                   :
+breadcrumbs              : false
+words_per_minute         : 160
+future                   : true
+read_more                : "disabled"
+talkmap_link             : false
 
-# Reading Files
+comments:
+  provider               :
+  disqus:
+    shortname            :
+  discourse:
+    server               :
+  facebook:
+    appid                :
+    num_posts            :
+    colorscheme          :
+
+staticman:
+  allowedFields          : ['name', 'email', 'url', 'message']
+  branch                 : "gh-pages"
+  commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
+  format                 : "yml"
+  moderation             : true
+  path                   : "_data/comments/{options.slug}"
+  requiredFields         : ['name', 'email', 'message']
+  transforms:
+    email                : "md5"
+  generatedFields:
+    date:
+      type               : "date"
+      options:
+        format           : "iso8601"
+
+atom_feed:
+  hide                   : false
+  path                   :
+
+google_site_verification :
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
+
+twitter:
+  username               : &twitter
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 :
+social:
+  type                   :
+  name                   :
+  links                  : []
+
+analytics:
+  provider               : false
+  google:
+    tracking_id          :
+
 include:
   - .htaccess
   - _pages
   - files
+
 exclude:
   - docs
   - google_scholar_crawler
+  - AGENTS.md
+  - CLAUDE.md
+  - Gemfile.lock
+  - package-lock.json
+  - pnpm-lock.yaml
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
-  - .github
   - CHANGELOG
   - Capfile
   - Gemfile
@@ -88,29 +136,24 @@ exclude:
   - config
   - gulpfile.js
   - log
-  - "**/node_modules/**/*"
-  - "**/node_modules"
-  - "**/.pnpm/**/*"
-  - "**/.pnpm"
+  - node_modules
   - package.json
   - tmp
   - vendor
+
 keep_files:
   - .git
   - .svn
+
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
-# Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -121,36 +164,83 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# Defaults
+collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
+
 defaults:
-  # _pages
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
   - scope:
       path: ""
       type: pages
     values:
-      layout: default
+      layout: single
       author_profile: true
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: true
+      share: true
 
-
-# Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed
 
-
-# Outputting
 permalink: /:categories/:title/
-timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai
 
-
-# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
-# mimic GitHub Pages with --safe
+
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
@@ -158,9 +248,13 @@ whitelist:
   - jekyll-feed
   - jemoji
 
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
-# HTML Compression
-# - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:

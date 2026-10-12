@@ -6,14 +6,13 @@ html {
   position: relative;
   min-height: 100%;
 }
-
 body {
   margin: 0;
-  padding: 0;
-  padding-bottom: 0em;
+  padding: $masthead-height 0 0;
+  padding-bottom: 9em;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.4;
+  line-height: 1.5;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -22,15 +21,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0.8em 0 0.3em;
-  line-height: 1.15;
+  margin: 2em 0 0.5em;
+  line-height: 1.2;
   font-family: $header-font-family;
   font-weight: bold;
 }
 
 h1 {
-  // margin: 4em 0 0.5em;
-  margin-top: 1em;
+  margin-top: 0;
   font-size: $type-size-3;
 }
 
@@ -59,7 +57,7 @@ small, .small {
 }
 
 p {
-  margin-bottom: 0.35em;
+  margin-bottom: 1.3em;
 }
 
 u,
@@ -69,12 +67,6 @@ ins {
   a {
     color: inherit;
   }
-}
-
-ul {
-  padding-inline-start: 1.5em;
-  margin-block-start: 0.35em;
-  margin-block-end: 0.35em;
 }
 
 del a {
@@ -119,7 +111,6 @@ blockquote {
 /* links */
 
 a {
-  
   &:focus {
     @extend %tab-focus;
   }
