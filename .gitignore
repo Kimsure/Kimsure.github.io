@@ -9,4 +9,5 @@ ref_xjx.png
 Gemfile.lock
 .bundle/
 bundle/
-vendor/
+# Ignore Bundler dependencies, not vendored theme source files.
+/vendor/
