@@ -74,7 +74,7 @@ Publications
 <button class="pub-button active" onclick="filterPublications(event, 'all')">Core Publications</button>
 <button class="pub-button" onclick="filterPublications(event, 'list')">Full Publications List</button>
 
-(* equal contribution · &dagger; corresponding author · &Dagger; project leader)
+(* equal contribution · &Dagger; project leader)
 
 <div id="core-publications" class="publication-view" data-publication-view="core">
 <div class="publication-card" data-category="all">
@@ -222,7 +222,7 @@ Publications
       <span class="pub-list-title">CLG-INet: Coupled Local-Global Interactive Network for Image Restoration</span><br>
       <span class="pub-list-authors">Yuqi Jiang, Chune ZHANG, <a href="{{ site.url }}" target="_blank"><strong>Shuo Jin</strong></a>, Jiao Liu, Jiapeng Wang.</span>
 
-      <span class="pub-list-links"><a href="https://dl.acm.org/doi/pdf/10.1145/3581783.3612251">[paper]</a><a href="https://openreview.net/profile?id=~Yuqi_Jiang2">[author profile]</a><a href="/images/poster/poster_acm_CLGINet.pdf">[poster]</a></span>
+      <span class="pub-list-links"><a href="https://dl.acm.org/doi/pdf/10.1145/3581783.3612251">[paper]</a><a href="https://openreview.net/profile?id=~Yuqi_Jiang2">[project]</a><a href="/images/poster/poster_acm_CLGINet.pdf">[poster]</a></span>
     </li>
     <li>
       <span class="pub-list-badge">IEEE T-CSVT</span>
@@ -249,5 +249,6 @@ Services
 Teaching
 --------
 <span id="-teaching"></span>
-- INT305: Machine Learning (Undergraduate course at XJTLU), Teaching Assistant.
-- INT302: Image Processing (Undergraduate course at XJTLU), Teaching Assistant.
+- AIP304: Machine Learning (Undergraduate course @ XJTLU), Teaching Assistant.
+- INT305: Machine Learning (Undergraduate course @ XJTLU), Teaching Assistant.
+- INT302: Image Processing (Undergraduate course @ XJTLU), Teaching Assistant.
