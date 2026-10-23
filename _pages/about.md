@@ -77,6 +77,23 @@ Publications
 (* equal contribution · &Dagger; project leader)
 
 <div id="core-publications" class="publication-view" data-publication-view="core">
+<h3 id="preprint">Preprint</h3>
+<div class="publication-card" data-category="all">
+  <div style="display: flex; align-items: center;">
+    <div class="pub-media-rotator" data-interval="4000" style="position: relative; width: 320px; height: 180px; margin-right: 20px; border-radius: 8px; overflow: hidden; flex: 0 0 auto;">
+      <img src="images/TAG.png" alt="TAG method overview: calibrating frozen SAM3 with trainable adapters and image-level supervision" style="width: 320px; height: 180px; object-fit: contain; display: block; margin: 0 auto;">
+    </div>
+    <div>
+      <strong>TAG: Calibrating SAM3 for Universal Image Segmentation without Dense Supervision</strong><br>
+      <i style="font-size: 13px;">Hao Zhu, Heyu Sun, <a href="{{ site.url }}" target="_blank"><strong>Shuo Jin</strong></a>, Jiayu Xiao, Feng Dai.</i><br>
+      Calibrating SAM3 for universal image segmentation with image-level supervision and confidence-weighted distillation.
+      <br>
+      <a href="https://arxiv.org/abs/2610.14651"><em>[arxiv]</em></a>
+    </div>
+  </div>
+</div>
+
+<h3 id="publication">Publication</h3>
 <div class="publication-card" data-category="all">
   <div style="display: flex; align-items: center;">
     <div class="pub-media-rotator" data-interval="4000" style="position: relative; width: 320px; height: 180px; margin-right: 20px; border-radius: 8px; overflow: hidden; flex: 0 0 auto;">
