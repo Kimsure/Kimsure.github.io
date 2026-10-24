@@ -94,6 +94,7 @@ Publications
 </div>
 
 <h3 id="publication">Publication</h3>
+<!--
 <div class="publication-card" data-category="all">
   <div style="display: flex; align-items: center;">
     <div class="pub-media-rotator" data-interval="4000" style="position: relative; width: 320px; height: 180px; margin-right: 20px; border-radius: 8px; overflow: hidden; flex: 0 0 auto;">
@@ -112,6 +113,7 @@ Publications
     </div>
   </div>
 </div>
+-->
 
 <div class="publication-card" data-category="all">
   <div style="display: flex; align-items: center;">
@@ -185,6 +187,25 @@ Publications
       <a href="/SFP/"><em>[project]</em></a>
       <a href="https://github.com/Kimsure/SFP"><em>[code]</em></a>
       <a href="/images/poster/poster_iccv25_SFP.pdf"><em>[poster]</em></a>
+    </div>
+  </div>
+</div>
+
+<div class="publication-card" data-category="all">
+  <div style="display: flex; align-items: center;">
+    <div class="pub-media-rotator" data-interval="4000" style="position: relative; width: 320px; height: 180px; margin-right: 20px; border-radius: 8px; overflow: hidden; flex: 0 0 auto;">
+      <img src="images/KSNet-method.png" alt="KSNet method overview: kernel-split network with recurrent propagation and inter-frame alignment" style="width: 320px; height: 180px; object-fit: contain; display: block; margin: 0 auto;">
+    </div>
+    <div>
+      <strong>Kernel Dimension Matters: To Activate Available Kernels for Real-time Video Super-Resolution</strong><br>
+      <i style="font-size: 13px;"><a href="{{ site.url }}" target="_blank"><strong>Shuo Jin</strong></a>, Meiqin Liu, Chao Yao, Chunyu Lin, Yao Zhao.</i><br>
+      Kernel-split design and efficient temporal alignment for real-time video super-resolution.
+      <br>
+      <b><i style="color:#83a1c7;">ACM MM 2023 &nbsp;</i></b>
+      <a href="https://dl.acm.org/doi/pdf/10.1145/3581783.3611908"><em>[paper]</em></a>
+      <a href="/KSNet/"><em>[project]</em></a>
+      <a href="https://github.com/Kimsure/KSNet"><em>[code]</em></a>
+      <a href="/images/poster/poster_acm_0942.pdf"><em>[poster]</em></a>
     </div>
   </div>
 </div>
