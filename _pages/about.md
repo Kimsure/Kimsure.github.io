@@ -290,3 +290,4 @@ Teaching
 - AIP304: Machine Learning (Undergraduate course @ XJTLU), Teaching Assistant.
 - INT305: Machine Learning (Undergraduate course @ XJTLU), Teaching Assistant.
 - INT302: Image Processing (Undergraduate course @ XJTLU), Teaching Assistant.
+- CSI305: Multimedia Security Systems (Undergraduate course @ XJTLU), Teaching Assistant.
