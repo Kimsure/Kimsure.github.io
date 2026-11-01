@@ -182,7 +182,7 @@ Publications
       <i style="font-size: 13px;"><a href="{{ site.url }}" target="_blank"><strong>Shuo Jin</strong></a>, Siyue Yu, Bingfeng Zhang, Mingjie Sun, Yi Dong, Jimin Xiao.</i><br>
       Suppressing attention outliers to improve spatial perception in open-vocabulary segmentation.
       <br>
-      <b><i style="color:#83a1c7;">ICCV 2025 Highlight &nbsp;</i></b>
+      <b><i style="color:#83a1c7;">ICCV 2025 Highlight (top 9.7% of accepted papers) &nbsp;</i></b>
       <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Jin_Feature_Purification_Matters_Suppressing_Outlier_Propagation_for_Training-Free_Open-Vocabulary_Semantic_ICCV_2025_paper.pdf"><em>[paper]</em></a>
       <a href="/SFP/"><em>[project]</em></a>
       <a href="https://github.com/Kimsure/SFP"><em>[code]</em></a>
